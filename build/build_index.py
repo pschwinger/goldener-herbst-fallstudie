@@ -159,6 +159,7 @@ S = {'de': dict(
     weitere=['Test B, fotoreal', 'Test B, 3D-Stil', 'Test B, Kontrolle ohne Figurenblatt', 'Test A fotoreal, Take 1 (ersetzt)', 'Test B fotoreal, Take 1 (ersetzt)', 'Test A Bleistift, Take 1 gemischt (ersetzt)'],
     blind='<b>Blind-Test</b>Links die Kontrolle ohne Blatt, Mitte der Take mit Blatt, rechts ein Interviewbild. Philipp sah es blind: links ist er es nicht. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ (H-003).',
     neu=['Test A fotoreal, Take 3: neue Altersleiter (9.10. 22:32)', 'Test A Bleistift, Take 2: Bleistift-Altersleiter (9.10. 22:34)'],
+    intern='Nur intern, nicht veröffentlicht: Quelle Q-015 ist nur für den Test freigegeben.', intern_tag='intern',
     archiv_sum='Archiv 2020 bis 2026 (intern)',
     archiv_p='Das Archiv der Sendung, gepflegt von ffp-archive: Dramaturgie, Material pro Person, Produkte, Analyse, Technik, Rechte. Es ist Teil dieser Seite; <a href="archiv.html">in voller Größe öffnen</a>.',
     archiv_title='Archiv 2020 bis 2026',
@@ -223,6 +224,7 @@ S = {'de': dict(
     weitere=['Test B, photoreal', 'Test B, 3D style', 'Test B, control without character sheet', 'Test A photoreal, take 1 (replaced)', 'Test B photoreal, take 1 (replaced)', 'Test A pencil, take 1 mixed (replaced)'],
     blind='<b>Blind test</b>Left the control without sheet, middle the take with sheet, right an interview still. Philipp saw it blind: on the left it is not him. The sheet buys the likeness, the words buy the type (H-003).',
     neu=['Test A photoreal, take 3: new age ladder (9 Oct 22:32)', 'Test A pencil, take 2: pencil age ladder (9 Oct 22:34)'],
+    intern='Internal only, not published: source Q-015 is cleared for the test only.', intern_tag='internal',
     archiv_sum='Archive 2020 to 2026 (internal)',
     archiv_p='The programme\'s archive, kept by ffp-archive, in German: dramaturgy, material per person, products, analysis, technology, rights. It is part of this page; <a href="archiv.html">open at full size</a>.',
     archiv_title='Archive 2020 to 2026',
@@ -241,6 +243,8 @@ def build(lang):
 
     def take_card(tid, label=None):
         t = T[tid]; c, l = tag(t['status']); b = t['datei'][:-4]
+        if t.get('intern'):
+            return '<figure><div class="locked"><div>%s</div></div><figcaption><b>%s</b><span class="tag t-open">%s</span>%s · %s<br>%s<br><small>%s · %s: %s</small></figcaption></figure>' % (s['intern'], esc(label or ('%s, %s' % (t['stil'], t['take']))), s['intern_tag'], esc(t['stil']), esc(t['take']), esc(t['kurz']), esc(t['id']), s['urteil'], esc(t['urteil']))
         return ('<figure><video controls preload="metadata" src="videos/%s" onerror="this.parentNode.classList.add(\'missing\')"></video>'
                 '<div class="pend">%s<br><span class="mono">videos/%s</span></div>'
                 '<figcaption><b>%s</b><span class="tag %s">%s</span>%s · %s<br>%s<br><small>%s · %s: %s · <a href="videos/%s.prompt.txt">Prompt</a> · <a href="videos/%s.ledger.json">Ledger</a> · <a href="videos/%s_kontakt.jpg">%s</a></small></figcaption></figure>'
@@ -263,7 +267,11 @@ def build(lang):
     briefs = ''.join('<details open><summary>%s</summary><div class="brief">%s</div></details>' % (esc(t), md2html(rd(s['briefdir'] + f))) for t, f in zip(s['brief_titles'], BRIEF_FILES))
     secs.append(('briefe', s['h_briefe'], '<p class="note">%s</p>' % s['briefe_note'] + briefs))
     # 5 Figurenblatt
-    imgs = ''.join('<figure%s><img src="bilder/%s" alt="%s" loading="lazy" onerror="this.parentNode.classList.add(\'missing\')"><div class="pend">%s<br><span class="mono">bilder/%s</span></div><figcaption><b>%s · %s</b>%s</figcaption></figure>' % (' class="struck"' if b.get('gestrichen') else '', esc(b['datei']), esc(b['titel']), s['pend'], esc(b['datei']), esc(b['id']), esc(b['titel']), esc(b['status'])) for b in D['bilder'] if b['id'] != 'H-003')
+    def img_card(b):
+        if b.get('intern'):
+            return '<figure><div class="locked"><div>%s</div></div><figcaption><b>%s · %s</b>%s</figcaption></figure>' % (s['intern'], esc(b['id']), esc(b['titel']), esc(b['status']))
+        return '<figure%s><img src="bilder/%s" alt="%s" loading="lazy" onerror="this.parentNode.classList.add(\'missing\')"><div class="pend">%s<br><span class="mono">bilder/%s</span></div><figcaption><b>%s · %s</b>%s</figcaption></figure>' % (' class="struck"' if b.get('gestrichen') else '', esc(b['datei']), esc(b['titel']), s['pend'], esc(b['datei']), esc(b['id']), esc(b['titel']), esc(b['status']))
+    imgs = ''.join(img_card(b) for b in D['bilder'] if b['id'] != 'H-003')
     secs.append(('figur', s['h_figur'], '<p>%s</p><div class="grid">%s</div>' % (s['figur_p'], imgs)))
     # 6 Vorhersagen
     v = D['vorhersagen']; k = D['kosten']

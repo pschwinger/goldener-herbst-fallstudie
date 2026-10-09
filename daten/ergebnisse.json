@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 23:00 CEST",
+  "stand": "2026-10-09 23:10 CEST",
   "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS DREI FOTOS VON ARMIN MÜLLER-STAHL ENTSTANDEN: EINEM BILD AUS UNSEREM INTERVIEW 2026, IM ALTER VON 90 JAHREN, UND ZWEI FOTOS AUS SEINEM PRIVATEN ARCHIV. DARAUS WURDEN DIE FIGURENBLÄTTER GEMACHT. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
@@ -101,9 +101,10 @@
       "test": "A",
       "stil": "fotoreal",
       "take": "Take 3 (v5, neue Altersleiter)",
-      "status": "geliefert",
+      "status": "intern",
       "kurz": "13 von 13 Shots. Die Blätter 32 und 47 aus den Privatarchiv-Fotos gebunden: der junge Mann mit Mütze und der Vater am Steuer tragen jetzt das Gesicht der Blätter, Schnurrbart in 2, 3, 4 und 8; ab den Achtzigern wie gehabt. Abzeichen auf der Uniform erneut; Lint 19,3 W/s (Warnung).",
-      "urteil": "storyboard per Auge, 9.10. 22:35: eine Figur über die Leiter, der junge liest sich eher 35 bis 40; Philipps Urteil folgt"
+      "urteil": "storyboard per Auge, 9.10. 22:35: eine Figur über die Leiter, der junge liest sich eher 35 bis 40; Philipps Urteil folgt",
+      "intern": true
     },
     {
       "id": "V-011",
@@ -111,9 +112,10 @@
       "test": "A",
       "stil": "Bleistift-Stil",
       "take": "Take 2 (v2, Bleistift-Altersleiter)",
-      "status": "geliefert",
+      "status": "intern",
       "kurz": "13 von 13 Shots, durchgehend einfarbig, diesmal ohne Rot am Kardinal und an den Kerzen. Der Bleistiftstrich hält in etwa 9 von 13 Einstellungen; die Fellmütze bei Nacht, die Allee und die Bühne lesen sich eher als Graustufen-Foto. Schnurrbart in 2, 3, 4 und 8 aus den Bleistift-Blättern; Sterne und Schulterstücke auf der Uniform erneut.",
-      "urteil": "storyboard per Auge, 9.10. 22:40: eine Figur über die Leiter; Philipps Urteil folgt"
+      "urteil": "storyboard per Auge, 9.10. 22:40: eine Figur über die Leiter; Philipps Urteil folgt",
+      "intern": true
     }
   ],
   "bilder": [
@@ -208,13 +210,15 @@
       "id": "G-026",
       "datei": "sheet1_age32_v2_c1_flash.png",
       "titel": "Altersblatt 32, aus dem Privatarchiv-Filmbild (nur Test)",
-      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
+      "status": "angenommen 9.10. 22:08; nicht auf der Seite, Quelle Q-015 nur für den Test (Philipp 21:30)",
+      "intern": true
     },
     {
       "id": "G-027",
       "datei": "sheet1_age32_sketch_c1_pro.png",
       "titel": "Altersblatt 32 im Bleistift-Stil",
-      "status": "storyboard per Auge bestanden, 9.10. 22:13 (Zeile folgt)"
+      "status": "angenommen 9.10. 22:08; nicht auf der Seite, Quelle Q-015 nur für den Test (Philipp 21:30)",
+      "intern": true
     },
     {
       "id": "G-028",
