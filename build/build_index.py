@@ -131,7 +131,7 @@ S = {'de': dict(
     figur_p='Eine Figur, die durch alle Bilder dieselbe bleibt: derselbe Mann, aus fünf Interviewbildern (1080p, Kopf und Schultern, native Pixel) zuerst im echten Alter gebaut, dann in Worten um achtzehn Jahre zurückgesetzt, dann als Kardinal eingekleidet, dann in den 3D-Stil und in den Bleistift-Stil übersetzt, dazu vier Altersblätter. Jeder Schritt ist ein Edit des vorigen mit einer einzigen Variablen. Vor dem ersten Lauf: Blatt neben den Interviewbildern, per Auge, Identität, nicht Alter (Regel R-001).',
     h_vorhersagen='Vorhersagen',
     vorhersagen_p='Jede Vorhersage wurde geschrieben, bevor Credits ausgegeben wurden, und danach benotet; die Prompts hat Philipp vor jedem Lauf gesehen. Neun Takes, alle aus denselben Briefen und demselben Figurenblatt.',
-    nums=['Vorhersagen vorab', 'gehalten', 'gescheitert', 'teilweise', 'nicht gelaufen', 'Video-Credits, %d Abbuchungen'], thousands='.',
+    nums=['Vorhersagen vorab', 'gehalten', 'gescheitert', 'teilweise', 'nicht gelaufen'], thousands='.',
     vth=['Vor der Ausgabe geschrieben', 'Quote', 'Urteil'],
     h_regeln='Regeln', rth=['Regel', 'Wortlaut'],
     regeln=[('R-001 Identität', 'Vor dem ersten Seeden: Figurenblatt Seite an Seite plus Differenzbild gegen die Interviewbilder, per Auge, geprüft wird Identität, nicht Alter. Kein KI-Upscale auf ein echtes Gesicht, nur Lanczos.'),
@@ -195,7 +195,7 @@ S = {'de': dict(
     figur_p='One character that stays the same through every image: the same man, built first at his real age from five interview stills (1080p, head and shoulders, native pixels), then set back eighteen years in words, then dressed as a cardinal, then translated into the 3D style and the pencil style, plus four age sheets. Every step is an edit of the previous one with a single variable. Before the first run: sheet beside the interview stills, by eye, identity, not age (rule R-001).',
     h_vorhersagen='Predictions',
     vorhersagen_p='Every prediction was written before credits were spent and graded afterwards; Philipp saw the prompts before every run. Nine takes, all from the same briefs and the same character sheet.',
-    nums=['predictions in advance', 'held', 'failed', 'partial', 'not run', 'video credits, %d charges'], thousands=',',
+    nums=['predictions in advance', 'held', 'failed', 'partial', 'not run'], thousands=',',
     vth=['Written before spending', 'Odds', 'Verdict'],
     h_regeln='Rules', rth=['Rule', 'Wording'],
     regeln=[('R-001 Identity', 'Before the first seeding: character sheet side by side plus a difference image against the interview stills, by eye; what is checked is identity, not age. No AI upscale on a real face, Lanczos only.'),
@@ -267,8 +267,8 @@ def build(lang):
     secs.append(('figur', s['h_figur'], '<p>%s</p><div class="grid">%s</div>' % (s['figur_p'], imgs)))
     # 6 Vorhersagen
     v = D['vorhersagen']; k = D['kosten']
-    credits = '{:,}'.format(k['video_credits']).replace(',', s['thousands'])
-    nums = ''.join('<div class="num"><b>%s</b><span>%s</span></div>' % (esc(a), esc(b)) for a, b in zip([v['gesamt'], v['gehalten'], v['gescheitert'], v['teilweise'], v['nicht_gelaufen'], credits], s['nums'][:5] + [s['nums'][5] % k['abbuchungen']]))
+    # Philipp, 9.10. 22:55: keine Credit-Zahlen auf der Seite.
+    nums = ''.join('<div class="num"><b>%s</b><span>%s</span></div>' % (esc(a), esc(b)) for a, b in zip([v['gesamt'], v['gehalten'], v['gescheitert'], v['teilweise'], v['nicht_gelaufen']], s['nums'][:5]))
     vdet = ''
     if D.get('vorhersagen_detail'):
         vdet = '<table><tr>%s</tr>' % ''.join('<th>%s</th>' % h for h in s['vth']) + ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(p['claim']), esc(p['quote']), esc(p['urteil'])) for p in D['vorhersagen_detail']) + '</table>'

@@ -202,9 +202,9 @@
       "urteil": "held, under-confident"
     },
     {
-      "claim": "Cost 270 per 30 s run",
+      "claim": "Price per 30 s run as assumed",
       "quote": "0.90",
-      "urteil": "failed: 360 charged, price changed"
+      "urteil": "failed: the provider changed the price"
     },
     {
       "claim": "Four age sheets pass first time",
