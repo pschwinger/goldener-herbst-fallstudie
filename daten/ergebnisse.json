@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 21:50 CEST",
+  "stand": "2026-10-09 22:18 CEST",
   "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS DREI FOTOS VON ARMIN MÜLLER-STAHL ENTSTANDEN: EINEM BILD AUS UNSEREM INTERVIEW 2026, IM ALTER VON 90 JAHREN, UND ZWEI FOTOS AUS SEINEM PRIVATEN ARCHIV. DARAUS WURDEN DIE FIGURENBLÄTTER GEMACHT. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
@@ -183,6 +183,30 @@
       "datei": "sheet1_age47_c1_flash.png",
       "titel": "Altersblatt 47, aus dem Privatarchiv-Porträt (Q-014)",
       "status": "R-001 bestanden, 9.10. 21:38 (Zeile in der Quellenliste folgt)"
+    },
+    {
+      "id": "G-026",
+      "datei": "sheet1_age32_v2_c1_flash.png",
+      "titel": "Altersblatt 32, aus dem Privatarchiv-Filmbild (nur Test)",
+      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
+    },
+    {
+      "id": "G-027",
+      "datei": "sheet1_age32_sketch_c1_pro.png",
+      "titel": "Altersblatt 32 im Bleistift-Stil",
+      "status": "storyboard per Auge bestanden, 9.10. 22:13 (Zeile folgt)"
+    },
+    {
+      "id": "G-028",
+      "datei": "sheet1_age47_sketch_c1_pro.png",
+      "titel": "Altersblatt 47 im Bleistift-Stil",
+      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
+    },
+    {
+      "id": "G-029",
+      "datei": "sheet1_age65_sketch_c1_pro.png",
+      "titel": "Altersblatt 65 im Bleistift-Stil",
+      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
     },
     {
       "id": "H-003",
