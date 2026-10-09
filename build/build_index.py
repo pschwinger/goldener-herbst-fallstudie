@@ -155,9 +155,10 @@ S = {'de': dict(
     h_offen='Offen',
     h_material='Material',
     material_p='Alles, was zum Ergebnis geführt hat: die weiteren Takes und Bilder, die Briefe, Vorhersagen, Regeln, Fehlversuche, die Belege zum Download, das Interview, die Quellenliste und das interne Archiv. Je Thema einklappbar.',
-    weitere_sum='Weitere Takes (Test B, Kontrolle, ersetzte Takes)',
+    weitere_sum='Weitere Takes (neue Läufe mit der Altersleiter, Test B, Kontrolle, ersetzte Takes)',
     weitere=['Test B, fotoreal', 'Test B, 3D-Stil', 'Test B, Kontrolle ohne Figurenblatt', 'Test A fotoreal, Take 1 (ersetzt)', 'Test B fotoreal, Take 1 (ersetzt)', 'Test A Bleistift, Take 1 gemischt (ersetzt)'],
     blind='<b>Blind-Test</b>Links die Kontrolle ohne Blatt, Mitte der Take mit Blatt, rechts ein Interviewbild. Philipp sah es blind: links ist er es nicht. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ (H-003).',
+    neu=['Test A fotoreal, Take 3: neue Altersleiter (9.10. 22:32)', 'Test A Bleistift, Take 2: Bleistift-Altersleiter (9.10. 22:34)'],
     archiv_sum='Archiv 2020 bis 2026 (intern)',
     archiv_p='Das Archiv der Sendung, gepflegt von ffp-archive: Dramaturgie, Material pro Person, Produkte, Analyse, Technik, Rechte. Es ist Teil dieser Seite; <a href="archiv.html">in voller Größe öffnen</a>.',
     archiv_title='Archiv 2020 bis 2026',
@@ -218,9 +219,10 @@ S = {'de': dict(
     h_offen='Open',
     h_material='Material',
     material_p='Everything that led to the result: the further takes and stills, the briefs, predictions, rules, failed attempts, the record to download, the interview, the source list and the internal archive. Collapsible per topic.',
-    weitere_sum='Further takes (test B, control, replaced takes)',
+    weitere_sum='Further takes (new runs with the age ladder, test B, control, replaced takes)',
     weitere=['Test B, photoreal', 'Test B, 3D style', 'Test B, control without character sheet', 'Test A photoreal, take 1 (replaced)', 'Test B photoreal, take 1 (replaced)', 'Test A pencil, take 1 mixed (replaced)'],
     blind='<b>Blind test</b>Left the control without sheet, middle the take with sheet, right an interview still. Philipp saw it blind: on the left it is not him. The sheet buys the likeness, the words buy the type (H-003).',
+    neu=['Test A photoreal, take 3: new age ladder (9 Oct 22:32)', 'Test A pencil, take 2: pencil age ladder (9 Oct 22:34)'],
     archiv_sum='Archive 2020 to 2026 (internal)',
     archiv_p='The programme\'s archive, kept by ffp-archive, in German: dramaturgy, material per person, products, analysis, technology, rights. It is part of this page; <a href="archiv.html">open at full size</a>.',
     archiv_title='Archive 2020 to 2026',
@@ -294,7 +296,7 @@ def build(lang):
 
     # Philipp, 9.10. 15:15: ein Knopf. Das Ergebnis steht oben; alles andere liegt unten unter Material, je Thema einklappbar.
     w = s['weitere']
-    weitere = '<details open><summary>%s</summary><div class="row3">' % s['weitere_sum'] + take_card('V-005', w[0]) + take_card('V-006', w[1]) + take_card('V-007', w[2]) + '</div><div class="row3">' + take_card('V-001', w[3]) + take_card('V-004', w[4]) + take_card('V-008', w[5]) + '</div><figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy"><figcaption>%s</figcaption></figure></details>' % s['blind']
+    weitere = '<details open><summary>%s</summary><div class="row3">' % s['weitere_sum'] + take_card('V-005', w[0]) + take_card('V-006', w[1]) + take_card('V-007', w[2]) + '</div><div class="row3">' + take_card('V-001', w[3]) + take_card('V-004', w[4]) + take_card('V-008', w[5]) + '</div><div class="row3">' + take_card('V-010', s['neu'][0]) + take_card('V-011', s['neu'][1]) + '</div><figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy"><figcaption>%s</figcaption></figure></details>' % s['blind']
     material = weitere + ''.join('<details open><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t), h) for k_, t, h in secs if k_ != 'ergebnis') + '<details id="archiv" open><summary>%s</summary><p>%s</p><iframe src="archiv.html" title="%s" style="width:100%%;height:85vh;border:1px solid var(--hair);border-radius:10px;background:#fff" loading="lazy"></iframe></details>' % (s['archiv_sum'], s['archiv_p'], s['archiv_title'])
     nav = '<a href="#material">%s</a><a class="lang%s" href="index.html" lang="de">%s</a><a class="lang%s" href="en.html" lang="en">%s</a><span class="brand">FFP · GOLDENER HERBST 2026</span>' % (
         s['nav_material'], ' on' if lang == 'de' else '', s['lang_de'], ' on' if lang == 'en' else '', s['lang_en'])

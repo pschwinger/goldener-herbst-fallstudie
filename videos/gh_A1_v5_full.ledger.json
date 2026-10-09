@@ -1,0 +1,150 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-09T22:24:16",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 30s generate_audio=false direct",
+  "job_id": "a9522bbf-83cc-4b5f-8048-57dbc4240ee0",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261009_202448_a9522bbf-83cc-4b5f-8048-57dbc4240ee0.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age77_c1_flash.png",
+      "source_sha256": "8aafa9cec7c331497f167759c405bb6029c7692d1cf4d49f270d588b5f5430e2",
+      "bound": "out/gh-A1/ref1_sheet1_age77_c1_flash_1920x1080.png",
+      "bound_sha256": "a959edd498bafbc5662106386fa20795adb47cdd9a053c75b72269ee1df5b2e5"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age32_v2_c1_flash.png",
+      "source_sha256": "35511a7097f71dd2cc469ee18c361f806b97b1b7c5a2ac3db6e4c2813f929399",
+      "bound": "out/gh-A1/ref2_sheet1_age32_v2_c1_flash_1920x1080.png",
+      "bound_sha256": "1df4c2b6f4c7c28e0e1fc903dc56cd319cc9f6ccab986d6aa33547538c1f8b96"
+    },
+    {
+      "image": "@Image3",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age47_c1_flash.png",
+      "source_sha256": "91cfb0c04a3e1f4f9a7bc64e86156700ec799da12792ba2387d6319112d4e2e3",
+      "bound": "out/gh-A1/ref3_sheet1_age47_c1_flash_1920x1080.png",
+      "bound_sha256": "32d4934eefe5ac2cab23a5a85ea97ee46b10442b3d86bfa361f586986e752286"
+    },
+    {
+      "image": "@Image4",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age62_c1_flash.png",
+      "source_sha256": "153e14fb64ab2ee07e02c1819f6536503eddc872f51607a27c742e7a059e60e9",
+      "bound": "out/gh-A1/ref4_sheet1_age62_c1_flash_1920x1080.png",
+      "bound_sha256": "a8dd8aaf8441c9214b89335c768340a4935031ee2db1b23544b29b97e2e22917"
+    },
+    {
+      "image": "@Image5",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1a_realage_c3_pro.png",
+      "source_sha256": "d4292ea94df486b94b2bf48873026a5abd07f5ac01d8b77e6cc4e6a18c4fcf3e",
+      "bound": "out/gh-A1/ref5_sheet1a_realage_c3_pro_1920x1080.png",
+      "bound_sha256": "0a4fff97096f317af30a1d9391a78327efa9adf42b2f65367a27a4508c968029"
+    },
+    {
+      "image": "@Image6",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/testframe_shot14_photoreal_c3_flash_v2.png",
+      "source_sha256": "8a66659eeb8650bccbefde9fa64e6ca40946752af8516d2a47635d59d4357e36",
+      "bound": "out/gh-A1/ref6_testframe_shot14_photoreal_c3_flash_v2_1920x1080.png",
+      "bound_sha256": "2c71fbd0e2d71ae3c81b00aad86bcc54be5c6694d48849df1672cb880045931b"
+    }
+  ],
+  "prompt_file": "gh_A1_v5_full.prompt.txt",
+  "prompt_sha256": "09220e4c0342514dc9eabd631e5f117856d8920e12dc6b95ddb98e92fc33d5bb",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.3 outside 10-15 (warn): 580w / 30s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "721"
+      }
+    ],
+    "format": {
+      "duration": "30.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 360,
+    "charged_at_source": 360,
+    "balance": {
+      "before": 4597.5,
+      "after": 3877.5,
+      "note": "both re-runs charged together at 20:24Z (-360, -360); after = balance after both"
+    },
+    "basis": "higgsfield account transactions 2026-10-09 20:24Z"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 721 f, 30.04 s, NO audio stream",
+    "cuts_detected": [
+      2.63,
+      4.54,
+      6.63,
+      8.42,
+      10.46,
+      12.58,
+      15.5,
+      17.38,
+      19.21,
+      20.88,
+      22.46,
+      24.42
+    ],
+    "cuts_note": "12 of 12, 13 shots, within 1 s of the stamps",
+    "saturation_SATAVG_8bit": {
+      "shot1": 0.5,
+      "shot2": 0.6,
+      "note": "b/w shots clean"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "1_identity_across_ladder": {
+      "belief": "HOLDS better than any A run: a younger man with moustache in 2, 3, 4, 8 (flat cap, car, fur hat, guitar), clean-shaven with glasses at about 60 in 5, 6, 9, old in 10 to 13; reads as one man ageing; sheet match is Philipp's call",
+      "conf": 0.7
+    },
+    "2_motifs_and_ages": {
+      "belief": "13 of 13; the AGE LADDER TOOK: shot 2 reads about 40 (not 32), 3/4/8 about 47, 5/6/9 about 60-65, 10-13 old",
+      "conf": 0.85
+    },
+    "3_grades": {
+      "belief": "PASS; b/w 1-2 clean; fur hat shot strongly red-lit",
+      "conf": 0.85
+    },
+    "4_no_text": {
+      "belief": "FAIL: readable plate on the avenue car (RTS 25077-like)",
+      "conf": 0.9
+    },
+    "5_companions": {
+      "belief": "family faces forward, children clearly visible (allowed)",
+      "conf": null
+    },
+    "9_no_insignia": {
+      "belief": "FAIL on shot 6 again (shoulder boards, collar patches); dinner in white tie with a small pin",
+      "conf": 0.9
+    },
+    "7_fermata": {
+      "belief": "PASS: alone, held, dims",
+      "conf": 0.85
+    },
+    "10_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  },
+  "storyboard_predictions_graded": {
+    "P1_same_man_across_ladder_0.55": "HELD on my read (0.7); Philipp decides",
+    "P2_shots_3_4_8_man_of_the_portrait_0.7": "HELD: moustache, dark hair back, about 47",
+    "P3_shot2_reads_28_to_36_0.45": "FAILED: he reads about 40",
+    "P4_insignia_shot6_0.7": "HELD (5 of 5 A runs)",
+    "P5_13_of_13_0.85": "HELD"
+  }
+}
