@@ -180,6 +180,8 @@ material = weitere + ''.join('<details open><summary>%s</summary><div style="pad
 nav = '<a href="#material">Material</a><span class="brand">FFP · GOLDENER HERBST 2026</span>'
 body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k, esc(t), h) for k, t, h in secs if k == 'ergebnis') + '<section id="material"><h2>Material</h2><p>Alles, was zum Ergebnis geführt hat: die weiteren Takes und Bilder, die Briefe, Vorhersagen, Regeln, Fehlversuche, die Belege zum Download, das Interview, die Quellenliste und das interne Archiv. Je Thema einklappbar.</p>' + material + '</section>'
 banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>Vorabfassung.</b> %s</div>' % esc(D.get('freigabe_hinweis', ''))
+if D.get('hinweis_test'):
+    banner += '<div class="banner" style="border-left-color:#1f1f1f;background:#fff;border-color:#1f1f1f;font-weight:700;letter-spacing:.02em">%s</div>' % esc(D['hinweis_test'])
 page = """<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goldener Herbst 2026 — Reinraum-Fallstudie (FFP)</title><style>%s</style></head>
