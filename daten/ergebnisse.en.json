@@ -114,6 +114,10 @@
     "G-024": {
       "titel": "Test frame, the empty stage, pencil style",
       "status": "accepted, 9 Oct 17:05"
+    },
+    "G-025": {
+      "titel": "Age sheet 47, from the private-archive portrait (Q-014)",
+      "status": "R-001 passed, 9 Oct 21:38 (source-list row to follow)"
     }
   },
   "fehlversuche": {
