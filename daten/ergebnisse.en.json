@@ -3,54 +3,217 @@
   "hinweis_test": "ALL IMAGES AND VIDEOS ON THIS PAGE WERE CREATED FROM A SINGLE PICTURE OF ARMIN MÜLLER-STAHL, TAKEN IN OUR 2026 INTERVIEW, AT THE AGE OF 95. THIS IS A TEST, NOT THE FINAL RESULT. THREE MORE IMAGES, HIM AS A YOUNG MAN, IN MIDDLE AGE AND AS AN OLDER MAN, STILL HAVE TO BE CREATED.",
   "freigabe_hinweis": "Preliminary version, released by Philipp Schwinger (FFP) on 9 Oct 2026. The written consent of Armin Müller-Stahl for the generated images is to follow (Q-001, Q-012, P-001); until then, images and videos appear here only as far as he has released them himself. Not legal advice.",
   "takes": {
-    "V-001": {"stil": "photoreal", "take": "Take 1", "kurz": "13 of 13 shots. Age reads 65 to 85 throughout, the age sheets did not bind; invented insignia.", "urteil": "Philipp, 9 Oct: replaced by take 2 (car from the front)"},
-    "V-002": {"stil": "photoreal", "take": "Version 3 (take 2, v4)", "kurz": "13 of 13 shots. Car from the front as asked; age still 65 to 85; insignia in two shots.", "urteil": "Philipp, 9 Oct 12:03: him from the sixties on, not in the young shots"},
-    "V-003": {"stil": "3D style", "take": "Version 2", "kurz": "13 of 13 shots. The look holds throughout; a licence plate and a maker's star invented on the car.", "urteil": "Philipp, 9 Oct 12:04: one character throughout, recognisably him"},
-    "V-004": {"stil": "photoreal", "take": "Take 1", "kurz": "Every written gate held, but every cardinal wore his face.", "urteil": "Philipp, 9 Oct"},
-    "V-005": {"stil": "photoreal", "take": "Take 2 (v3)", "kurz": "One sentence fixes the other cardinals' faces; plus two aerial shots at 24 s.", "urteil": "Philipp, 9 Oct"},
-    "V-006": {"stil": "3D style", "take": "Take 1", "kurz": "Holds.", "urteil": "Philipp, 9 Oct"},
-    "V-007": {"stil": "photoreal, control without character sheet", "take": "Control", "kurz": "Same text, no character sheet: a plausible old cardinal who is not him. The sheet buys the likeness, the words buy the type.", "urteil": "Philipp blind, 9 Oct 11:16: not him"},
-    "V-008": {"stil": "pencil style", "take": "Take 1 (mixed)", "kurz": "13 of 13 shots. The pencil style held in only about 5 of 13 shots; wherever a shot named its decade colour, it tipped into photoreal. Two films in one.", "urteil": "Philipp, 9 Oct 17:57: no re-run of the mixed form; replaced by Version 1 (V-009)"},
-    "V-009": {"stil": "pencil style", "take": "Version 1 (all graphite)", "kurz": "13 of 13 shots. Every colour word removed from the shots, the style repeated in each shot: graphite lines and hatching throughout, 11 of 13 shots fully monochrome; red stays on the cardinal and the candlelight. Insignia on the uniform as in every A run.", "urteil": "Philipp, 9 Oct 18:19: accepted; 18:25: Version 1 on the page"}
+    "V-001": {
+      "stil": "photoreal",
+      "take": "Take 1",
+      "kurz": "13 of 13 shots. Age reads 65 to 85 throughout, the age sheets did not bind; invented insignia.",
+      "urteil": "Philipp, 9 Oct: replaced by take 2 (car from the front)"
+    },
+    "V-002": {
+      "stil": "photoreal",
+      "take": "Version 3 (take 2, v4)",
+      "kurz": "13 of 13 shots. Car from the front as asked; age still 65 to 85; insignia in two shots.",
+      "urteil": "Philipp, 9 Oct 12:03: him from the sixties on, not in the young shots"
+    },
+    "V-003": {
+      "stil": "3D style",
+      "take": "Version 2",
+      "kurz": "13 of 13 shots. The look holds throughout; a licence plate and a maker's star invented on the car.",
+      "urteil": "Philipp, 9 Oct 12:04: one character throughout, recognisably him"
+    },
+    "V-004": {
+      "stil": "photoreal",
+      "take": "Take 1",
+      "kurz": "Every written gate held, but every cardinal wore his face.",
+      "urteil": "Philipp, 9 Oct"
+    },
+    "V-005": {
+      "stil": "photoreal",
+      "take": "Take 2 (v3)",
+      "kurz": "One sentence fixes the other cardinals' faces; plus two aerial shots at 24 s.",
+      "urteil": "Philipp, 9 Oct"
+    },
+    "V-006": {
+      "stil": "3D style",
+      "take": "Take 1",
+      "kurz": "Holds.",
+      "urteil": "Philipp, 9 Oct"
+    },
+    "V-007": {
+      "stil": "photoreal, control without character sheet",
+      "take": "Control",
+      "kurz": "Same text, no character sheet: a plausible old cardinal who is not him. The sheet buys the likeness, the words buy the type.",
+      "urteil": "Philipp blind, 9 Oct 11:16: not him"
+    },
+    "V-008": {
+      "stil": "pencil style",
+      "take": "Take 1 (mixed)",
+      "kurz": "13 of 13 shots. The pencil style held in only about 5 of 13 shots; wherever a shot named its decade colour, it tipped into photoreal. Two films in one.",
+      "urteil": "Philipp, 9 Oct 17:57: no re-run of the mixed form; replaced by Version 1 (V-009)"
+    },
+    "V-009": {
+      "stil": "pencil style",
+      "take": "Version 1 (all graphite)",
+      "kurz": "13 of 13 shots. Every colour word removed from the shots, the style repeated in each shot: graphite lines and hatching throughout, 11 of 13 shots fully monochrome; red stays on the cardinal and the candlelight. Insignia on the uniform as in every A run.",
+      "urteil": "Philipp, 9 Oct 18:19: accepted; 18:25: Version 1 on the page"
+    }
   },
   "bilder": {
-    "G-003": {"titel": "Anchor: character sheet at his real age (95)", "status": "R-001 passed, 8 Oct 20:02"},
-    "G-005": {"titel": "Sheet 1: the same man at 77", "status": "R-001 passed, 8 Oct approx. 20:25"},
-    "G-007": {"titel": "Sheet 2: the cardinal", "status": "passed, 8 Oct 20:22"},
-    "G-020": {"titel": "Sheet 1 in the 3D style", "status": "passed, 8 Oct evening"},
-    "G-021": {"titel": "Sheet 2 in the 3D style", "status": "passed, 8 Oct evening"},
-    "G-009": {"titel": "Age sheet 62", "status": "passed"},
-    "G-010": {"titel": "Age sheet 52", "status": "passed"},
-    "G-011": {"titel": "Age sheet 42 (reads as 45)", "status": "accepted"},
-    "G-012": {"titel": "Age sheet 32 (reads as 40)", "status": "accepted"},
-    "G-018": {"titel": "Test frame, the empty stage, photoreal", "status": "accepted, 8 Oct 21:12"},
-    "G-022": {"titel": "Test frame, the empty stage, 3D style", "status": "accepted, 8 Oct evening"},
-    "H-003": {"titel": "Blind test: control, take with sheet, interview still", "status": "Record, humans only"}
+    "G-003": {
+      "titel": "Anchor: character sheet at his real age (95)",
+      "status": "R-001 passed, 8 Oct 20:02"
+    },
+    "G-005": {
+      "titel": "Sheet 1: the same man at 77",
+      "status": "R-001 passed, 8 Oct approx. 20:25"
+    },
+    "G-007": {
+      "titel": "Sheet 2: the cardinal",
+      "status": "passed, 8 Oct 20:22"
+    },
+    "G-020": {
+      "titel": "Sheet 1 in the 3D style",
+      "status": "passed, 8 Oct evening"
+    },
+    "G-021": {
+      "titel": "Sheet 2 in the 3D style",
+      "status": "passed, 8 Oct evening"
+    },
+    "G-009": {
+      "titel": "Age sheet 62",
+      "status": "passed"
+    },
+    "G-010": {
+      "titel": "Age sheet 52",
+      "status": "passed"
+    },
+    "G-011": {
+      "titel": "Age sheet 42 (reads as 45)",
+      "status": "accepted"
+    },
+    "G-012": {
+      "titel": "Age sheet 32 (reads as 40)",
+      "status": "accepted"
+    },
+    "G-018": {
+      "titel": "Test frame, the empty stage, photoreal",
+      "status": "accepted, 8 Oct 21:12"
+    },
+    "G-022": {
+      "titel": "Test frame, the empty stage, 3D style",
+      "status": "accepted, 8 Oct evening"
+    },
+    "H-003": {
+      "titel": "Blind test: control, take with sheet, interview still",
+      "status": "Record, humans only"
+    },
+    "G-023": {
+      "titel": "Sheet 1 in the pencil style",
+      "status": "R-001 passed, 9 Oct 16:55 (source-list row to follow)"
+    },
+    "G-024": {
+      "titel": "Test frame, the empty stage, pencil style",
+      "status": "accepted, 9 Oct 17:05 (source-list row to follow)"
+    }
   },
   "fehlversuche": {
-    "G-002": {"was": "Character sheet at real age, candidate 2 (Pro)", "warum": "eight panels instead of six"},
-    "G-013": {"was": "Age sheet 32, candidate 1", "warum": "reads as 50"},
-    "G-014": {"was": "Age sheet 32, 45 years in one step", "warum": "identity lost, face redrawn (SSIM 0.44 to 0.58). Rule R-003 came from this."},
-    "G-015": {"was": "Age sheet 52, candidate 1", "warum": "too little change"},
-    "G-016": {"was": "Age sheet 42, candidate 1", "warum": "too little change"},
-    "G-017": {"was": "Age sheet 42, candidate 2", "warum": "almost a copy of the input"},
-    "G-019": {"was": "Test frame shot 14 photoreal, version 1 (wide from the stage)", "warum": "replaced by Philipp's framing from the balcony"},
-    "V-001": {"was": "Montage photoreal, take 1", "warum": "age 65 to 85 instead of the decades, invented insignia"},
-    "V-004": {"was": "Conclave photoreal, take 1", "warum": "every cardinal wore his face"},
-    "ohne Datei": {"id": "no file", "was": "gemini-3-pro-image, refusals without an image", "warum": "5x without the consent sentence; 0 of 8 on every age shift; 2 of 2 on sheet 2 in the 3D style; 2x on test frame version 1"},
-    "V-008": {"was": "Test A, pencil style, take 1 (style block with 'monochrome' beside the shots' decade colours)", "warum": "the style held in only about 5 of 13 shots; wherever a shot named its colour, it tipped into photoreal. Lesson: the style has to stand in every shot and must not be contradicted there; that is how Version 1 (V-009) came about"}
+    "G-002": {
+      "was": "Character sheet at real age, candidate 2 (Pro)",
+      "warum": "eight panels instead of six"
+    },
+    "G-013": {
+      "was": "Age sheet 32, candidate 1",
+      "warum": "reads as 50"
+    },
+    "G-014": {
+      "was": "Age sheet 32, 45 years in one step",
+      "warum": "identity lost, face redrawn (SSIM 0.44 to 0.58). Rule R-003 came from this."
+    },
+    "G-015": {
+      "was": "Age sheet 52, candidate 1",
+      "warum": "too little change"
+    },
+    "G-016": {
+      "was": "Age sheet 42, candidate 1",
+      "warum": "too little change"
+    },
+    "G-017": {
+      "was": "Age sheet 42, candidate 2",
+      "warum": "almost a copy of the input"
+    },
+    "G-019": {
+      "was": "Test frame shot 14 photoreal, version 1 (wide from the stage)",
+      "warum": "replaced by Philipp's framing from the balcony"
+    },
+    "V-001": {
+      "was": "Montage photoreal, take 1",
+      "warum": "age 65 to 85 instead of the decades, invented insignia"
+    },
+    "V-004": {
+      "was": "Conclave photoreal, take 1",
+      "warum": "every cardinal wore his face"
+    },
+    "ohne Datei": {
+      "id": "no file",
+      "was": "gemini-3-pro-image, refusals without an image",
+      "warum": "5x without the consent sentence; 0 of 8 on every age shift; 2 of 2 on sheet 2 in the 3D style; 2x on test frame version 1"
+    },
+    "V-008": {
+      "was": "Test A, pencil style, take 1 (style block with 'monochrome' beside the shots' decade colours)",
+      "warum": "the style held in only about 5 of 13 shots; wherever a shot named its colour, it tipped into photoreal. Lesson: the style has to stand in every shot and must not be contradicted there; that is how Version 1 (V-009) came about"
+    }
   },
   "vorhersagen_detail": [
-    {"claim": "All 13 montage shots present, first take", "quote": "0.30", "urteil": "held, under-confident"},
-    {"claim": "Cost 270 per 30 s run", "quote": "0.90", "urteil": "failed: 360 charged, price changed"},
-    {"claim": "Four age sheets pass first time", "quote": "0.35", "urteil": "failed: 1, 2, 3, 3 takes"},
-    {"claim": "Age readable per decade (added later)", "quote": "-", "urteil": "failed twice"},
-    {"claim": "No insignia (added later)", "quote": "-", "urteil": "failed; the fix held on B"},
-    {"claim": "The stage light dims as written", "quote": "0.70", "urteil": "partial: dims, but too early"},
-    {"claim": "Second pass fixes the face leak", "quote": "0.55", "urteil": "held"},
-    {"claim": "Control: a blind reviewer does not recognise him", "quote": "0.75", "urteil": "held (Philipp, 9 Oct 11:16)"},
-    {"claim": "Identity across six ages, photoreal (A-1)", "quote": "0.45", "urteil": "partial: him from the sixties on, not in the young shots (Philipp, 9 Oct 12:03)"},
-    {"claim": "One recognisable character in 3D (A-2)", "quote": "0.50", "urteil": "held (Philipp, 9 Oct 12:04)"}
+    {
+      "claim": "All 13 montage shots present, first take",
+      "quote": "0.30",
+      "urteil": "held, under-confident"
+    },
+    {
+      "claim": "Cost 270 per 30 s run",
+      "quote": "0.90",
+      "urteil": "failed: 360 charged, price changed"
+    },
+    {
+      "claim": "Four age sheets pass first time",
+      "quote": "0.35",
+      "urteil": "failed: 1, 2, 3, 3 takes"
+    },
+    {
+      "claim": "Age readable per decade (added later)",
+      "quote": "-",
+      "urteil": "failed twice"
+    },
+    {
+      "claim": "No insignia (added later)",
+      "quote": "-",
+      "urteil": "failed; the fix held on B"
+    },
+    {
+      "claim": "The stage light dims as written",
+      "quote": "0.70",
+      "urteil": "partial: dims, but too early"
+    },
+    {
+      "claim": "Second pass fixes the face leak",
+      "quote": "0.55",
+      "urteil": "held"
+    },
+    {
+      "claim": "Control: a blind reviewer does not recognise him",
+      "quote": "0.75",
+      "urteil": "held (Philipp, 9 Oct 11:16)"
+    },
+    {
+      "claim": "Identity across six ages, photoreal (A-1)",
+      "quote": "0.45",
+      "urteil": "partial: him from the sixties on, not in the young shots (Philipp, 9 Oct 12:03)"
+    },
+    {
+      "claim": "One recognisable character in 3D (A-2)",
+      "quote": "0.50",
+      "urteil": "held (Philipp, 9 Oct 12:04)"
+    }
   ],
   "prompt_regeln": [
     "Only he has the bound face; every other figure of the same type gets a different face in words, or the sheet leaks onto all of them.",
@@ -76,6 +239,10 @@
     "Legal text: training versus inference, adaptation, style and motif, personality rights; AT, DE, EU. Not legal advice."
   ],
   "beleg_pdf": [
-    {"datei": "pdf/Goldener-Herbst-Fallstudie-EN.pdf", "titel": "Download the record, English", "kurz": "one page: seven takes, predictions, rules, flags"}
+    {
+      "datei": "pdf/Goldener-Herbst-Fallstudie-EN.pdf",
+      "titel": "Download the record, English",
+      "kurz": "one page: seven takes, predictions, rules, flags"
+    }
   ]
 }
