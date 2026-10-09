@@ -1,44 +1,217 @@
 {
-  "stand": "2026-10-09 12:30 CEST",
+  "stand": "2026-10-09 13:05 CEST",
   "freigabe_oeffentlich": false,
-  "freigabe_hinweis": "Interne Fassung. Die schriftliche Einwilligung von Armin Müller-Stahl steht aus (Q-001, Q-012, P-001). Nicht veröffentlichen, bis Philipp und David freigeben.",
+  "freigabe_hinweis": "Vorabfassung, von Philipp Schwinger (FFP) am 9.10.2026 freigegeben. Die schriftliche Einwilligung von Armin Müller-Stahl für die erzeugten Bilder wird nachgereicht (Q-001, Q-012, P-001); bis dahin stehen Bilder und Videos hier nur, soweit er sie selbst freigegeben hat. Keine Rechtsberatung.",
   "takes": [
-    {"id": "V-001", "datei": "gh_A1_full.mp4", "test": "A", "stil": "fotoreal", "take": "Take 1", "status": "ersetzt", "kurz": "13 von 13 Shots. Alter überall 65 bis 85, die Altersblätter haben nicht gebunden; erfundene Abzeichen.", "urteil": "zwei Identitätsurteile offen"},
-    {"id": "V-002", "datei": "gh_A1_v4_full.mp4", "test": "A", "stil": "fotoreal", "take": "Take 2 (v4)", "status": "geliefert", "kurz": "13 von 13 Shots. Alter weiterhin 65 bis 85.", "urteil": "zwei Identitätsurteile offen"},
-    {"id": "V-003", "datei": "gh_A2_full.mp4", "test": "A", "stil": "3D-Stil", "take": "Take 1", "status": "geliefert", "kurz": "13 von 13 Shots.", "urteil": "Identitätsurteil offen"},
-    {"id": "V-004", "datei": "gh_B1_full.mp4", "test": "B", "stil": "fotoreal", "take": "Take 1", "status": "ersetzt", "kurz": "Alle schriftlichen Gates sauber, aber jeder Kardinal trug sein Gesicht.", "urteil": "Philipp, 9.10."},
-    {"id": "V-005", "datei": "gh_B1_v3_full.mp4", "test": "B", "stil": "fotoreal", "take": "Take 2 (v3)", "status": "geliefert", "kurz": "Ein Satz behebt die Gesichter der anderen Kardinäle; dazu zwei Luftaufnahmen bei 24 s.", "urteil": "Philipp, 9.10."},
-    {"id": "V-006", "datei": "gh_B2_full.mp4", "test": "B", "stil": "3D-Stil", "take": "Take 1", "status": "geliefert", "kurz": "Hält.", "urteil": "Philipp, 9.10."},
-    {"id": "V-007", "datei": "gh_B0_full.mp4", "test": "B", "stil": "fotoreal, Kontrolle ohne Figurenblatt", "take": "Kontrolle", "status": "Kontrolle", "kurz": "Gleicher Text, kein Figurenblatt: ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte den Typ.", "urteil": "Philipp blind, 9.10. 11:16: nicht er"}
+    {
+      "id": "V-001",
+      "datei": "gh_A1_full.mp4",
+      "test": "A",
+      "stil": "fotoreal",
+      "take": "Take 1",
+      "status": "ersetzt",
+      "kurz": "13 von 13 Shots. Alter überall 65 bis 85, die Altersblätter haben nicht gebunden; erfundene Abzeichen.",
+      "urteil": "zwei Identitätsurteile offen"
+    },
+    {
+      "id": "V-002",
+      "datei": "gh_A1_v4_full.mp4",
+      "test": "A",
+      "stil": "fotoreal",
+      "take": "Take 2 (v4)",
+      "status": "geliefert",
+      "kurz": "13 von 13 Shots. Alter weiterhin 65 bis 85.",
+      "urteil": "zwei Identitätsurteile offen"
+    },
+    {
+      "id": "V-003",
+      "datei": "gh_A2_full.mp4",
+      "test": "A",
+      "stil": "3D-Stil",
+      "take": "Take 1",
+      "status": "geliefert",
+      "kurz": "13 von 13 Shots.",
+      "urteil": "Identitätsurteil offen"
+    },
+    {
+      "id": "V-004",
+      "datei": "gh_B1_full.mp4",
+      "test": "B",
+      "stil": "fotoreal",
+      "take": "Take 1",
+      "status": "ersetzt",
+      "kurz": "Alle schriftlichen Gates sauber, aber jeder Kardinal trug sein Gesicht.",
+      "urteil": "Philipp, 9.10."
+    },
+    {
+      "id": "V-005",
+      "datei": "gh_B1_v3_full.mp4",
+      "test": "B",
+      "stil": "fotoreal",
+      "take": "Take 2 (v3)",
+      "status": "geliefert",
+      "kurz": "Ein Satz behebt die Gesichter der anderen Kardinäle; dazu zwei Luftaufnahmen bei 24 s.",
+      "urteil": "Philipp, 9.10."
+    },
+    {
+      "id": "V-006",
+      "datei": "gh_B2_full.mp4",
+      "test": "B",
+      "stil": "3D-Stil",
+      "take": "Take 1",
+      "status": "geliefert",
+      "kurz": "Hält.",
+      "urteil": "Philipp, 9.10."
+    },
+    {
+      "id": "V-007",
+      "datei": "gh_B0_full.mp4",
+      "test": "B",
+      "stil": "fotoreal, Kontrolle ohne Figurenblatt",
+      "take": "Kontrolle",
+      "status": "Kontrolle",
+      "kurz": "Gleicher Text, kein Figurenblatt: ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte den Typ.",
+      "urteil": "Philipp blind, 9.10. 11:16: nicht er"
+    }
   ],
   "bilder": [
-    {"id": "G-003", "datei": "sheet1a_realage_c3_pro.png", "titel": "Anker: Figurenblatt im echten Alter (95)", "status": "R-001 bestanden, 8.10. 20:02"},
-    {"id": "G-005", "datei": "sheet1_age77_c1_flash.png", "titel": "Blatt 1: derselbe Mann mit 77", "status": "R-001 bestanden, 8.10. ca. 20:25"},
-    {"id": "G-007", "datei": "sheet2_cardinal_c1_pro.png", "titel": "Blatt 2: der Kardinal", "status": "bestanden, 8.10. 20:22"},
-    {"id": "G-020", "datei": "sheet1_3d_c1_pro.png", "titel": "Blatt 1 im 3D-Stil", "status": "bestanden, 8.10. abends"},
-    {"id": "G-021", "datei": "sheet2_3d_c2_flash.png", "titel": "Blatt 2 im 3D-Stil", "status": "bestanden, 8.10. abends"},
-    {"id": "G-009", "datei": "sheet1_age62_c1_flash.png", "titel": "Altersblatt 62", "status": "bestanden"},
-    {"id": "G-010", "datei": "sheet1_age52_c2_flash_v2.png", "titel": "Altersblatt 52", "status": "bestanden"},
-    {"id": "G-011", "datei": "sheet1_age42_c3_flash_v3.png", "titel": "Altersblatt 42 (liest sich wie 45)", "status": "angenommen"},
-    {"id": "G-012", "datei": "sheet1_age32_c3_flash_v7.png", "titel": "Altersblatt 32 (liest sich wie 40)", "status": "angenommen"},
-    {"id": "G-018", "datei": "testframe_shot14_photoreal_c3_flash_v2.png", "titel": "Testbild, die leere Bühne, fotoreal", "status": "angenommen, 8.10. 21:12"},
-    {"id": "G-022", "datei": "testframe_shot14_3d_c1_pro.png", "titel": "Testbild, die leere Bühne, 3D-Stil", "status": "angenommen, 8.10. abends"},
-    {"id": "H-003", "datei": "gh_B0_vs_B1v3_vs_interview_shot4.jpg", "titel": "Blind-Test: Kontrolle, Take mit Blatt, Interviewbild", "status": "Beleg, nur für Menschen"}
+    {
+      "id": "G-003",
+      "datei": "sheet1a_realage_c3_pro.png",
+      "titel": "Anker: Figurenblatt im echten Alter (95)",
+      "status": "R-001 bestanden, 8.10. 20:02"
+    },
+    {
+      "id": "G-005",
+      "datei": "sheet1_age77_c1_flash.png",
+      "titel": "Blatt 1: derselbe Mann mit 77",
+      "status": "R-001 bestanden, 8.10. ca. 20:25"
+    },
+    {
+      "id": "G-007",
+      "datei": "sheet2_cardinal_c1_pro.png",
+      "titel": "Blatt 2: der Kardinal",
+      "status": "bestanden, 8.10. 20:22"
+    },
+    {
+      "id": "G-020",
+      "datei": "sheet1_3d_c1_pro.png",
+      "titel": "Blatt 1 im 3D-Stil",
+      "status": "bestanden, 8.10. abends"
+    },
+    {
+      "id": "G-021",
+      "datei": "sheet2_3d_c2_flash.png",
+      "titel": "Blatt 2 im 3D-Stil",
+      "status": "bestanden, 8.10. abends"
+    },
+    {
+      "id": "G-009",
+      "datei": "sheet1_age62_c1_flash.png",
+      "titel": "Altersblatt 62",
+      "status": "bestanden"
+    },
+    {
+      "id": "G-010",
+      "datei": "sheet1_age52_c2_flash_v2.png",
+      "titel": "Altersblatt 52",
+      "status": "bestanden"
+    },
+    {
+      "id": "G-011",
+      "datei": "sheet1_age42_c3_flash_v3.png",
+      "titel": "Altersblatt 42 (liest sich wie 45)",
+      "status": "angenommen"
+    },
+    {
+      "id": "G-012",
+      "datei": "sheet1_age32_c3_flash_v7.png",
+      "titel": "Altersblatt 32 (liest sich wie 40)",
+      "status": "angenommen"
+    },
+    {
+      "id": "G-018",
+      "datei": "testframe_shot14_photoreal_c3_flash_v2.png",
+      "titel": "Testbild, die leere Bühne, fotoreal",
+      "status": "angenommen, 8.10. 21:12"
+    },
+    {
+      "id": "G-022",
+      "datei": "testframe_shot14_3d_c1_pro.png",
+      "titel": "Testbild, die leere Bühne, 3D-Stil",
+      "status": "angenommen, 8.10. abends"
+    },
+    {
+      "id": "H-003",
+      "datei": "gh_B0_vs_B1v3_vs_interview_shot4.jpg",
+      "titel": "Blind-Test: Kontrolle, Take mit Blatt, Interviewbild",
+      "status": "Beleg, nur für Menschen"
+    }
   ],
   "fehlversuche": [
-    {"id": "G-002", "was": "Figurenblatt echtes Alter, Kandidat 2 (Pro)", "warum": "acht Felder statt sechs"},
-    {"id": "G-013", "was": "Altersblatt 32, Kandidat 1", "warum": "liest sich wie 50"},
-    {"id": "G-014", "was": "Altersblatt 32, 45 Jahre in einem Schritt", "warum": "Identität verloren, Gesicht neu gezeichnet (SSIM 0.44 bis 0.58). Daraus Regel R-003."},
-    {"id": "G-015", "was": "Altersblatt 52, Kandidat 1", "warum": "zu wenig bewegt"},
-    {"id": "G-016", "was": "Altersblatt 42, Kandidat 1", "warum": "zu wenig bewegt"},
-    {"id": "G-017", "was": "Altersblatt 42, Kandidat 2", "warum": "fast Kopie der Eingabe"},
-    {"id": "G-019", "was": "Testbild Shot 14 fotoreal, Fassung 1 (Totale von der Bühne)", "warum": "ersetzt durch Philipps Kadrierung vom Balkon"},
-    {"id": "V-001", "was": "Montage fotoreal, Take 1", "warum": "Alter 65 bis 85 statt der Jahrzehnte, erfundene Abzeichen"},
-    {"id": "V-004", "was": "Konklave fotoreal, Take 1", "warum": "jeder Kardinal trug sein Gesicht"},
-    {"id": "ohne Datei", "was": "gemini-3-pro-image, Ablehnungen ohne Bild", "warum": "5x ohne Einwilligungssatz; 0 von 8 bei jeder Altersverschiebung; 2 von 2 bei Blatt 2 im 3D-Stil; 2x auf Testbild Fassung 1"}
+    {
+      "id": "G-002",
+      "was": "Figurenblatt echtes Alter, Kandidat 2 (Pro)",
+      "warum": "acht Felder statt sechs"
+    },
+    {
+      "id": "G-013",
+      "was": "Altersblatt 32, Kandidat 1",
+      "warum": "liest sich wie 50"
+    },
+    {
+      "id": "G-014",
+      "was": "Altersblatt 32, 45 Jahre in einem Schritt",
+      "warum": "Identität verloren, Gesicht neu gezeichnet (SSIM 0.44 bis 0.58). Daraus Regel R-003."
+    },
+    {
+      "id": "G-015",
+      "was": "Altersblatt 52, Kandidat 1",
+      "warum": "zu wenig bewegt"
+    },
+    {
+      "id": "G-016",
+      "was": "Altersblatt 42, Kandidat 1",
+      "warum": "zu wenig bewegt"
+    },
+    {
+      "id": "G-017",
+      "was": "Altersblatt 42, Kandidat 2",
+      "warum": "fast Kopie der Eingabe"
+    },
+    {
+      "id": "G-019",
+      "was": "Testbild Shot 14 fotoreal, Fassung 1 (Totale von der Bühne)",
+      "warum": "ersetzt durch Philipps Kadrierung vom Balkon"
+    },
+    {
+      "id": "V-001",
+      "was": "Montage fotoreal, Take 1",
+      "warum": "Alter 65 bis 85 statt der Jahrzehnte, erfundene Abzeichen"
+    },
+    {
+      "id": "V-004",
+      "was": "Konklave fotoreal, Take 1",
+      "warum": "jeder Kardinal trug sein Gesicht"
+    },
+    {
+      "id": "ohne Datei",
+      "was": "gemini-3-pro-image, Ablehnungen ohne Bild",
+      "warum": "5x ohne Einwilligungssatz; 0 von 8 bei jeder Altersverschiebung; 2 von 2 bei Blatt 2 im 3D-Stil; 2x auf Testbild Fassung 1"
+    }
   ],
-  "vorhersagen": {"gesamt": 24, "gehalten": 18, "gescheitert": 4, "teilweise": 1, "offen": 2, "nicht_gelaufen": 3},
-  "kosten": {"video_credits": 2274, "abbuchungen": 8},
+  "vorhersagen": {
+    "gesamt": 24,
+    "gehalten": 18,
+    "gescheitert": 4,
+    "teilweise": 1,
+    "offen": 2,
+    "nicht_gelaufen": 3
+  },
+  "kosten": {
+    "video_credits": 2274,
+    "abbuchungen": 8
+  },
   "beobachtungen": [
     "Rauch stieg in 3 von 3 Konklave-Läufen aus der Kuppellaterne, unabhängig vom Wortlaut.",
     "Die Altersblätter banden in der Montage nicht: das Modell blieb bei 65 bis 85.",

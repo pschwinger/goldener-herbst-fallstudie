@@ -132,7 +132,7 @@ secs.append(('offen', 'Offen', '<ul>' + ''.join('<li>%s</li>' % esc(o) for o in 
 
 nav = ''.join('<a href="#%s">%s</a>' % (k, esc(t)) for k, t, _ in secs) + '<span class="brand">FFP · GOLDENER HERBST 2026</span>'
 body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k, esc(t), h) for k, t, h in secs)
-banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>Interne Fassung.</b> %s</div>' % esc(D.get('freigabe_hinweis', ''))
+banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>Vorabfassung.</b> %s</div>' % esc(D.get('freigabe_hinweis', ''))
 page = """<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goldener Herbst 2026 — Reinraum-Fallstudie (FFP)</title><style>%s</style></head>
