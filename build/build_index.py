@@ -103,7 +103,7 @@ secs.append(('regeln', 'Regeln aus dem Lauf', """
 <tr><td>R-003 Alter</td><td>Altersedits in Stufen von 15 bis 20 Jahren, jede Stufe als Edit des gebundenen Vorgängers. Das Pro-Modell komponiert oder editiert dieses Gesicht nur im Alter der gebundenen Referenz; jede Altersverschiebung trägt das Flash-Modell.</td></tr>
 <tr><td>R-004 Wasserzeichen</td><td>Aufgehoben am 9.10.: Takes und Standbilder gehen so wie sie sind auf die interne Seite. Bei externer Weitergabe neu entscheiden.</td></tr>
 <tr><td>P-001 Einwilligungssatz</td><td>Das Pro-Modell lieferte dieses Gesicht erst mit einem Eingangssatz, der eine schriftliche Einwilligung behauptet. Sie liegt noch nicht vor. Bedingung: schriftlich nachreichen, sonst Satz aus allen Prompts.</td></tr></table>
-<h4>Beobachtungen</h4><ul>""" + ''.join('<li>%s</li>' % esc(b) for b in D['beobachtungen']) + '</ul>'))
+<h4>Beobachtungen</h4><ul>""" + ''.join('<li>%s</li>' % esc(b) for b in D['beobachtungen']) + '</ul>' + ('<h4>Prompt-Regeln aus den Läufen (storyboard)</h4><ul>' + ''.join('<li>%s</li>' % esc(b) for b in D.get('prompt_regeln', [])) + '</ul>' if D.get('prompt_regeln') else '')))
 # Ergebnisse
 def tag(st):
     return {'geliefert': ('t-ok', 'geliefert'), 'ersetzt': ('t-rep', 'ersetzt'), 'Kontrolle': ('t-ctl', 'Kontrolle')}.get(st, ('t-open', st))
@@ -113,7 +113,25 @@ for t in D['takes']:
     takes += '<figure><video controls preload="metadata" src="videos/%s" onerror="this.parentNode.classList.add(\'missing\')"></video><div class="pend">noch nicht geliefert<br><span class="mono">videos/%s</span></div><figcaption><b>%s · Test %s · %s · %s</b><span class="tag %s">%s</span>%s<br><small>Urteil: %s</small></figcaption></figure>' % (esc(t['datei']), esc(t['datei']), esc(t['id']), esc(t['test']), esc(t['stil']), esc(t['take']), c, esc(l), esc(t['kurz']), esc(t['urteil']))
 v = D['vorhersagen']; k = D['kosten']
 nums = ''.join('<div class="num"><b>%s</b><span>%s</span></div>' % (esc(a), esc(b)) for a, b in [(v['gesamt'], 'Vorhersagen vorab'), (v['gehalten'], 'gehalten'), (v['gescheitert'], 'gescheitert'), (v['teilweise'], 'teilweise'), (v['offen'], 'warten auf Urteil'), (v['nicht_gelaufen'], 'nicht gelaufen'), ('{:,}'.format(k['video_credits']).replace(',', '.'), 'Video-Credits, %d Abbuchungen' % k['abbuchungen'])])
-secs.append(('ergebnisse', 'Ergebnisse', '<p>Sieben Takes, alle aus denselben Briefen und demselben Figurenblatt; die Prompts der Erzeugerseite hat Philipp vor jedem Lauf gesehen. Vorhersagen wurden vor der Erzeugung geschrieben und danach benotet.</p><div class="nums">' + nums + '</div><div class="grid">' + takes + '</div><p class="note">Fehlt ein Video, liegt die Datei noch nicht unter <a href="videos/">videos/</a> (Lieferung durch videogen, siehe LIES_MICH dort).</p>'))
+vdet = ''
+if D.get('vorhersagen_detail'):
+    vdet = '<h4>Vorhersagen im Einzelnen</h4><table><tr><th>Vor der Ausgabe geschrieben</th><th>Quote</th><th>Urteil</th></tr>' + ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(p['claim']), esc(p['quote']), esc(p['urteil'])) for p in D['vorhersagen_detail']) + '</table>'
+secs.append(('ergebnisse', 'Ergebnisse', '<p>Sieben Takes, alle aus denselben Briefen und demselben Figurenblatt; die Prompts der Erzeugerseite hat Philipp vor jedem Lauf gesehen. Vorhersagen wurden vor der Erzeugung geschrieben und danach benotet.</p><div class="nums">' + nums + '</div><div class="grid">' + takes + '</div><p class="note">Fehlt ein Video, liegt die Datei noch nicht unter <a href="videos/">videos/</a> (Lieferung durch videogen, siehe LIES_MICH dort).</p>' + vdet))
+# Beleg (PDF)
+if D.get('beleg_pdf'):
+    secs.append(('beleg', 'Beleg zum Download', '<p>Die Fallstudie auf einer Seite, Deutsch und Englisch: sieben Takes, Vorhersagen mit Quote und Urteil, Regeln, Vorbehalte. Vertraulich / intern.</p><div class="grid">' + ''.join('<figure><figcaption style="padding:16px 14px"><b><a href="%s">%s</a></b>%s<br><span class="mono">%s</span></figcaption></figure>' % (esc(p['datei']), esc(p['titel']), esc(p['kurz']), esc(p['datei'])) for p in D['beleg_pdf']) + '</div>'))
+# Interview (Platzhalter)
+secs.append(('interview', 'Interview', """
+<p>Der nächste Schritt für einen Sender: Ein Redakteur beantwortet ein kurzes geführtes Interview, und die Antworten schalten Vorschläge frei, die zum Format passen, so wie das EWM-Interview bei Empirica ein Arbeitsprotokoll erzeugt.</p>
+<div class="brief"><h4>Die Fragen, erster Entwurf</h4><ol>
+<li>Welcher Dokumentarstil: Porträt, Reportage, Essay, Archivfilm, Hybrid?</li>
+<li>Welcher Sender und welches Programm?</li>
+<li>Welcher Sendeplatz und welche Uhrzeit?</li>
+<li>Welche Länge?</li>
+<li>Welches Publikum und welche Tonlage?</li>
+<li>Welches Material ist frei, welches nicht?</li>
+</ol>
+<p><a href="#interview" style="display:inline-block;background:#1f1f1f;color:#fff;text-decoration:none;font:700 13px system-ui,sans-serif;padding:9px 16px;border-radius:8px" onclick="alert('Das Interview folgt. Die Fragen stehen oben; die Vorschläge werden daraus abgeleitet.');return false;">Interview starten</a> <span class="mono" style="display:inline;margin-left:8px">Knopf steht, Interview folgt.</span></p></div>"""))
 # Fehlversuche
 secs.append(('fehl', 'Fehlversuche', '<p>Bleiben stehen, neben der Korrektur.</p><table><tr><th>Zeile</th><th>Was</th><th>Warum</th></tr>' + ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(f['id']), esc(f['was']), esc(f['warum'])) for f in D['fehlversuche']) + '</table>'))
 # Blind

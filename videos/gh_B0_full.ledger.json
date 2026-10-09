@@ -1,0 +1,109 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-09T10:53:50",
+  "model": "seedance_2_5 t2v 16:9 1080p 24s generate_audio=false direct",
+  "job_id": "493bc65b-cb90-4aeb-8311-02c018d0ad1b",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261009_085352_493bc65b-cb90-4aeb-8311-02c018d0ad1b.mp4",
+  "refs_bound": [],
+  "prompt_file": "gh_B0_full.prompt.txt",
+  "prompt_sha256": "7cb4ed14ca70433d67b22664f7ffdfb67ffb3bab7bfd40eaeac4aaeceedd7dd4",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.4 outside 10-15 (warn): 466w / 24s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "577"
+      }
+    ],
+    "format": {
+      "duration": "24.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 288,
+    "charged_at_source": 288,
+    "balance": {
+      "before": 5605.5,
+      "after": 5317.5
+    },
+    "basis": "higgsfield account transactions 2026-10-09 08:53Z Seedance 2.5 -288"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 577 f, 24.04 s, NO audio stream, t2v, no references",
+    "cuts_detected": {
+      "scene_gt_0.25": [
+        13.25,
+        18.13
+      ],
+      "scene_gt_0.10": [
+        5.08,
+        10.33,
+        13.25,
+        18.13
+      ],
+      "note": "4 of 4 within 0.35 s of the stamps; the two hall-to-hall and hall-to-wide cuts need the 0.10 threshold"
+    },
+    "camera_PSNR_first_vs_last": {
+      "shot1_drift": 19.7,
+      "shot2_push_in": 15.0,
+      "shot3_static": 23.3,
+      "shot4_static": 27.5,
+      "shot5_pull_back": 15.9,
+      "note": "moves where written, static where written"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "1_identity_one_man": {
+      "belief": "HOLDS as one man across shots 1, 3, 4 (bald, long face, gaunt); whether he reads as Mueller-Stahl is PB6, Philipp's blind call on the side-by-side",
+      "conf": 0.7
+    },
+    "11_only_he_carries_the_face": {
+      "belief": "PASS: the other cardinals are varied; he is the only one centred and with the cross",
+      "conf": 0.8
+    },
+    "2_motifs": {
+      "belief": "PASS 5 of 5 with deviations: smoke from the dome's lantern again (three of three runs); shot 2's smoke reads grey-white rather than black; the square is in frame in shot 2 with a thin crowd",
+      "conf": 0.85
+    },
+    "3_dress_without_invention": {
+      "belief": "PASS: cassock, mozzetta, zucchetto, cross on a cord; lace rochet cuffs visible (liturgical, not decoration)",
+      "conf": 0.85
+    },
+    "4_no_text": {
+      "belief": "PASS",
+      "conf": 0.85
+    },
+    "5_crowd_as_surface": {
+      "belief": "PARTIAL: square present in shot 2 but sparsely filled; shot 5 dome only",
+      "conf": 0.8
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS",
+      "conf": 0.8
+    },
+    "7_clean_texture": {
+      "belief": "PASS",
+      "conf": 0.8
+    },
+    "8_camera": {
+      "belief": "PASS",
+      "conf": 0.85
+    },
+    "9_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  },
+  "side_by_side": "gh_B0_vs_B1v3_vs_interview_shot4.jpg: left B-0 shot 4 (words only), middle B-1 v3 shot 4 (sheets bound), right interview crop kopf_3zu4_1100s"
+}

@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 13:05 CEST",
+  "stand": "2026-10-09 14:00 CEST",
   "freigabe_oeffentlich": false,
   "freigabe_hinweis": "Vorabfassung, von Philipp Schwinger (FFP) am 9.10.2026 freigegeben. Die schriftliche Einwilligung von Armin Müller-Stahl für die erzeugten Bilder wird nachgereicht (Q-001, Q-012, P-001); bis dahin stehen Bilder und Videos hier nur, soweit er sie selbst freigegeben hat. Keine Rechtsberatung.",
   "takes": [
@@ -11,7 +11,7 @@
       "take": "Take 1",
       "status": "ersetzt",
       "kurz": "13 von 13 Shots. Alter überall 65 bis 85, die Altersblätter haben nicht gebunden; erfundene Abzeichen.",
-      "urteil": "zwei Identitätsurteile offen"
+      "urteil": "Philipp, 9.10.: ersetzt durch Take 2 (Auto von vorn)"
     },
     {
       "id": "V-002",
@@ -20,8 +20,8 @@
       "stil": "fotoreal",
       "take": "Take 2 (v4)",
       "status": "geliefert",
-      "kurz": "13 von 13 Shots. Alter weiterhin 65 bis 85.",
-      "urteil": "zwei Identitätsurteile offen"
+      "kurz": "13 von 13 Shots. Auto von vorn wie gewünscht; Alter weiterhin 65 bis 85; Abzeichen in zwei Einstellungen.",
+      "urteil": "Philipp, 9.10. 12:03: er ab den Sechzigern, nicht in den jungen Einstellungen"
     },
     {
       "id": "V-003",
@@ -30,8 +30,8 @@
       "stil": "3D-Stil",
       "take": "Take 1",
       "status": "geliefert",
-      "kurz": "13 von 13 Shots.",
-      "urteil": "Identitätsurteil offen"
+      "kurz": "13 von 13 Shots. Der Stil hält durchgehend; Kennzeichen und Markenstern am Auto erfunden.",
+      "urteil": "Philipp, 9.10. 12:04: eine Figur durchgehend, erkennbar er"
     },
     {
       "id": "V-004",
@@ -201,13 +201,37 @@
     }
   ],
   "vorhersagen": {
-    "gesamt": 24,
-    "gehalten": 18,
+    "gesamt": 26,
+    "gehalten": 19,
     "gescheitert": 4,
-    "teilweise": 1,
-    "offen": 2,
+    "teilweise": 2,
+    "offen": 0,
     "nicht_gelaufen": 3
   },
+  "vorhersagen_detail": [
+    {"claim": "Alle 13 Montage-Einstellungen vorhanden, erster Take", "quote": "0,30", "urteil": "gehalten, zu vorsichtig"},
+    {"claim": "Kosten 270 je 30-s-Lauf", "quote": "0,90", "urteil": "verfehlt: 360 verrechnet, Preis geändert"},
+    {"claim": "Vier Altersblätter auf Anhieb", "quote": "0,35", "urteil": "verfehlt: 1, 2, 3, 3 Takes"},
+    {"claim": "Alter je Jahrzehnt lesbar (nachträglich)", "quote": "-", "urteil": "zweimal verfehlt"},
+    {"claim": "Keine Abzeichen (nachträglich)", "quote": "-", "urteil": "verfehlt; Korrektur hielt bei B"},
+    {"claim": "Das Bühnenlicht dimmt wie geschrieben", "quote": "0,70", "urteil": "teilweise: dimmt, aber zu früh"},
+    {"claim": "Zweiter Durchgang behebt das Gesichtsleck", "quote": "0,55", "urteil": "gehalten"},
+    {"claim": "Kontrolle: ein blinder Prüfer erkennt ihn nicht", "quote": "0,75", "urteil": "gehalten (Philipp, 9.10. 11:16)"},
+    {"claim": "Identität über sechs Alter, fotoreal (A-1)", "quote": "0,45", "urteil": "teilweise: er ab den Sechzigern, nicht in den jungen Einstellungen (Philipp, 9.10. 12:03)"},
+    {"claim": "Eine erkennbare Figur in 3D (A-2)", "quote": "0,50", "urteil": "gehalten (Philipp, 9.10. 12:04)"}
+  ],
+  "prompt_regeln": [
+    "Nur er hat das gebundene Gesicht; jede andere Figur desselben Typs bekommt in Worten ein anderes Gesicht, sonst wandert das Blatt auf alle.",
+    "Fehlenden Schmuck an formeller Kleidung einzeln benennen: keine Orden, Medaillen, Litzen, Schulterstücke, Abzeichen, Schrift.",
+    "Farbworte zuerst in einer Einstellung ohne Gesicht, sonst überschreibt der Stilblock sie.",
+    "Eine 3D-Darstellung erfindet Kennzeichen und Marken an Fahrzeugen; ihr Fehlen benennen.",
+    "Eine Handlung je Einstellung; das Dimmen ist die Handlung, nicht ein Halten plus Dimmen.",
+    "Alter in Worten bindet im Video nicht an ein echtes Gesicht; der Rauch verlässt die Kuppellaterne nicht durch Worte (3 von 3)."
+  ],
+  "beleg_pdf": [
+    {"datei": "pdf/Goldener-Herbst-Fallstudie-DE.pdf", "titel": "Beleg zum Download, Deutsch", "kurz": "eine Seite: sieben Takes, Vorhersagen, Regeln, Vorbehalte"},
+    {"datei": "pdf/Goldener-Herbst-Fallstudie-EN.pdf", "titel": "Beleg zum Download, English", "kurz": "one page: seven takes, predictions, rules, flags"}
+  ],
   "kosten": {
     "video_credits": 2274,
     "abbuchungen": 8
@@ -221,10 +245,10 @@
   ],
   "offen": [
     "Schriftliche Einwilligung von Armin Müller-Stahl: Erzeugung und, falls Version C kommt, Training eines Modells auf sein Gesicht (Q-001, Q-012, P-001).",
-    "Zwei Identitätsurteile zur Montage (Philipp).",
+    "Version C (Modell auf sein Gesicht trainiert): vom Produzenten zurückgestellt, die Einwilligung deckt es ab; folgt als eigener Test, wenn der ORF es will.",
     "Zeilen von videogen für die sieben Takes: Prüfsummen, Modell, Job-ID, Prompt-Hash, Kosten.",
     "Fremdvergleich: ein Unbeteiligter sieht Original und Ergebnis nebeneinander.",
-    "PDF: zwei Entwürfe (DE, EN) bei storyboard; Weg entscheidet Philipp.",
+    "Interview: der Redakteur beantwortet ein kurzes geführtes Interview (Stil, Sender, Sendeplatz, Länge, Publikum), das Vorschläge für den Film freischaltet. Knopf steht, Interview folgt.",
     "Rechtstext: Training gegenüber Inferenz, Bearbeitung, Stil und Motiv, Bildnisrecht; AT, DE, EU. Keine Rechtsberatung."
   ]
 }
