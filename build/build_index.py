@@ -95,11 +95,28 @@ details summary{cursor:pointer;font-weight:700;padding:8px 0}
 .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}.num{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:10px 12px}.num b{display:block;font-size:1.5rem;font-family:Georgia,serif;font-weight:500}.num span{font-size:.78rem;color:var(--muted)}
 .btn{display:inline-block;background:#1f1f1f;color:#fff;text-decoration:none;font:700 13px system-ui,sans-serif;padding:9px 16px;border-radius:8px}
 .struck{position:relative;border-color:#d0021b}.struck img{opacity:.5}.struck::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top right,transparent 48.6%,#d0021b 48.6%,#d0021b 51.4%,transparent 51.4%)}.struck figcaption b{text-decoration:line-through;text-decoration-color:#d0021b;text-decoration-thickness:2px;color:#d0021b}
+.dg{width:100%;height:auto;display:block;margin:12px 0 6px}.dg text{font:600 13px system-ui,sans-serif;fill:#1f1f1f}.dg .sm{font:9.5px ui-monospace,Menlo,monospace;fill:#6f6f6f}.dg .wall{stroke:#8a2b2b;stroke-width:3;stroke-dasharray:8 6}.dg rect.box{fill:#f7f7f7;stroke:#cfcfcf;rx:10}.dg rect.emp{fill:#fff7e6;stroke:#f0d9a0;rx:10}.dg .arrow{stroke:#474747;stroke-width:2;fill:none;marker-end:url(#ah)}
+.grp{margin:18px 0 6px}.grp p{color:var(--steel);font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}.step{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:10px 12px}.step b{display:block;margin-bottom:4px}.step span{font-size:.9rem;color:var(--steel)}
 footer{margin-top:70px;border-top:1px solid var(--hair);padding-top:16px;font-size:.82rem;color:var(--muted)}
 """
 
 # Alle Oberflaechentexte je Sprache. Deutsch ist der Wortlaut der Seite vom 9.10. 18:26 (unveraendert).
 S = {'de': dict(
+    nav_details='Details', h_problem='Das Problem',
+    problem='<p>Für die Einleitungen der Sendung hat FFP im Archivsystem des Senders nur Material gesucht, das dort als frei markiert war, es bestellt und in die Einleitungen geschnitten. Die Rechteabteilung des ORF hat anschließend fast alles zurückgewiesen: Von 96 verwendeten Ausschnitten kamen 79 mit „Nein“ oder „Nein, aber“ zurück, 17 waren frei.</p><p>Die Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren, und ohne dass wir Rechte verletzen, die wir nicht haben?</p>',
+    h_untersucht='Was wir untersucht haben',
+    untersucht='<p>Drei Fragen, jede mit einem eigenen Lauf: Erstens, trägt ein Brief in Worten die Welt über eine Wand, hinter der niemand das Original sieht? Zweitens, was kauft ein Figurenblatt gegenüber Worten allein (der Kontrolllauf ohne Blatt)? Drittens, hält eine Figur über sechs Jahrzehnte, wenn die Altersblätter aus Worten kommen, und was ändert sich, wenn zwei echte Fotos aus seinem Archiv die Leiter stützen? Dazu drei Stile für dieselbe Montage: fotoreal, 3D und Bleistift.</p>',
+    h_entschieden='Was wir entschieden haben',
+    entschieden=['<b>Reinraum.</b> Wer das Original sieht, schreibt nur den Brief. Wer erzeugt, sieht das Original nie. Nur der Brief geht hinüber.', '<b>Das Gesicht.</b> Aus eigenem Material: ein Interviewbild 2026 mit seinem Einverständnis. Später zwei Fotos aus seinem Privatarchiv, auf Entscheidung und Risiko des Produzenten.', '<b>Drei Stile.</b> Fotoreal, 3D-Stil, Bleistift. Stilreferenzen bleiben bei den Menschen; der Stil geht nur in Worten über die Wand.', '<b>Messen vor dem Ausgeben.</b> Jede Vorhersage wird geschrieben, bevor ein Lauf Geld kostet, und danach benotet. Fehlversuche bleiben stehen.', '<b>Jede Eingabe hat eine Zeile.</b> Herkunft, Lizenz, Prüfer, bevor sie verwendet wird. Keine Filmbilder, keine Sendungsbilder, keine Pressefotos.'],
+    h_setup='Unser KI-Aufbau mit Empirica',
+    setup_p='Fünf KI-Praktiker, jeder mit einer eigenen Aufgabe und einem eigenen Gedächtnis, koordiniert über ein Netz. Empirica misst jeden Schritt: Was die Praktiker vorher glauben, was sie danach vorfinden, und wie weit beides auseinanderliegt. Das ist die Kalibrierung unten.',
+    dg=['Sender', 'Original', 'ffp-archive', 'Analystenseite, schreibt den Brief', 'Die Wand', 'storyboard', 'Shotliste, Prompts, Vorhersagen, Gates', 'imagegen', 'Figurenblätter, Testbilder', 'videogen', 'Seedance-Läufe', 'Seite, PDF', 'Ergebnis', 'Empirica: Vorhersage vor jeder Ausgabe, Urteil danach, Ledger, Quellenliste, Kalibrierung'],
+    praktiker=[('ffp-archive', 'Sieht das Original, die Quellen und den Schnitt. Schreibt den Brief in sechs Teilen und führt die Quellenliste. Nichts anderes verlässt seine Seite.'), ('storyboard', 'Baut aus dem Brief die Shotliste, die Prompts und die Vorhersagen; setzt die Gates; treibt die Kette; stellt Philipp nur, was nur er entscheiden kann.'), ('imagegen', 'Baut die Figurenblätter und Testbilder, jeder Schritt ein Edit des vorigen mit einer Variablen; misst gegen das Vorbild; schickt die Zeile.'), ('videogen', 'Übersetzt in das Format des Videomodells, lintet, fährt die Läufe, liefert Kontaktbogen und Ledger.'), ('Empirica', 'Das Messgerät darunter: jeder Praktiker öffnet und schließt eine Messung um seine Arbeit, loggt Befunde, Entscheidungen, Fehler und Vorhersagen; das Netz trägt die Nachrichten.')],
+    h_details='Details', details_p='Für alle, die es genau wissen wollen: die Figurenblätter mit Erklärung, die weiteren Takes, die Orte, die Kalibrierung und das ganze Material. Je Thema auf- und zuklappbar.',
+    gruppen={'ausgang': ('Das Ausgangsbild', 'Ein einziges Standbild aus unserem Interview 2026. Daraus wurde das Figurenblatt im echten Alter gebaut; alles andere ist davon abgeleitet.'), 'worte': ('In Worten jünger gemacht', 'Jedes Blatt ist ein Edit des vorigen, 15 bis 20 Jahre zurück, nur mit Worten. Bis 65 hielt das; die Blätter 52, 42 und 32 lasen sich zu alt und wurden ersetzt (rot durchgestrichen).'), 'fotos': ('Aus zwei Fotos aus seinem Privatarchiv', 'Ein Foto neben das Blatt gebunden, nur für das Aussehen in dem Alter; Gesicht und Aufbau bleiben vom Blatt. So kamen 47 und 32 auf Anhieb.'), 'kardinal': ('Der Kirchenfürst', 'Das Blatt für Test B: dieselbe Figur, als Kardinal eingekleidet.'), 'stile': ('Die Stile', 'Dieselben Blätter in den 3D-Stil und in den Bleistift-Stil übersetzt, der Stil die einzige Variable.'), 'test': ('Die Testbilder', 'Die leere Bühne, einmal je Stil, vor dem ersten Lauf: Maßstab und Licht geprüft, bevor ein Lauf Geld kostet.'), 'blind': ('Der Blind-Test', '')},
+    h_orte='Die Orte', orte_p='Für die Orte gab es keine Bildrecherche. Petersplatz und Kuppel kennen die Modelle; sie stehen nur in Worten im Brief (Quellenliste Q-004). Innenräume, der Beratungssaal, die Bühne, die Allee sind erfunden, nicht nachgebaut. Alles über die Welt der Szenen steht in den Teilen „Eins, die Welt“ der Briefe unten.',
+    h_kalib='Die Kalibrierung', kalib_p='Jede Vorhersage wurde geschrieben, bevor Credits ausgegeben wurden, und danach benotet; die Prompts hat Philipp vor jedem Lauf gesehen. Elf Takes, alle aus denselben Briefen.',
     file='index.html', htmllang='de', title='Goldener Herbst 2026: Reinraum-Fallstudie (FFP)',
     eyebrow='FFP · Goldener Herbst 2026 · Reinraum-Fallstudie · Stand %s',
     h1='Fremdmaterial ersetzen, ohne es zu kopieren',
@@ -115,7 +132,7 @@ S = {'de': dict(
     orig_title='Original: die Einleitung',
     orig_text='Archivblock der Sendung, rund zweieinhalb Minuten aus zwölf Quellen. 79 von 96 Ausschnitten wurden von der Rechteabteilung zurückgewiesen.',
     v1='Version 1: Bleistift', v2='Version 2: 3D-Stil', v3='Version 3: Fotoreal',
-    ergebnis_note='Weitere Takes (Test B, der Kirchenfürst, fotoreal und 3D-Stil; der Kontrolllauf ohne Figurenblatt; die drei ersetzten Takes) liegen mit Prompt, Kontaktbogen und Ledger unter <a href="videos/">videos/</a> und sind in der Quellenliste als V-001 bis V-009 geführt. Der Kontrolllauf ergab, blind beurteilt: ohne Figurenblatt entsteht ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ.',
+    ergebnis_note='Weitere Takes (Test B, der Kirchenfürst, fotoreal und 3D-Stil; der Kontrolllauf ohne Figurenblatt; die drei ersetzten Takes) liegen mit Prompt, Kontaktbogen und Ledger unter <a href="videos/">videos/</a> und sind in der Quellenliste als V-001 bis V-011 geführt. Der Kontrolllauf ergab, blind beurteilt: ohne Figurenblatt entsteht ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ.',
     h_warum='Warum',
     warum="""<p>Für die Einleitungen der Sendung hat FFP im Archivsystem des Senders nur Material gesucht, das dort als frei markiert war, es bestellt und in die Einleitungen geschnitten. Die Rechteabteilung des ORF hat anschließend fast alles zurückgewiesen: Von 96 verwendeten Ausschnitten kamen 79 mit „Nein“ oder „Nein, aber“ zurück, 17 waren frei.</p>
 <p>Die Fallstudie prüft einen Ausweg: Das Fremdmaterial wird nicht kopiert, sondern durch erzeugtes Material ersetzt, das dieselbe Welt heraufbeschwört, ohne den Schnitt nachzubauen. Dafür gibt es eine Wand: Wer das Original sieht, schreibt nur einen Brief auf Flughöhe eines Pitches. Wer erzeugt, sieht das Original nie.</p>
@@ -165,6 +182,20 @@ S = {'de': dict(
     archiv_title='Archiv 2020 bis 2026',
     footer='F.F.P. Film &amp; Fernsehproduktion GmbH, Unterer Schreiberweg 29/5, A-1190 Wien, <a href="https://www.ffp.at">www.ffp.at</a> · powered by EmpiricaAI, <a href="https://www.getempirica.com">www.getempirica.com</a> · Keine Rechtsberatung. Seite gebaut aus briefe/, quellen/ und daten/ergebnisse.json (ffp-archive, storyboard).',
 ), 'en': dict(
+    nav_details='Details', h_problem='The problem',
+    problem='<p>For the openings of the programme, FFP searched the broadcaster\'s archive system only for material marked as free there, ordered it and cut it into the openings. The ORF rights department then rejected almost all of it: of 96 excerpts used, 79 came back with "no" or "no, but", 17 were free.</p><p>The question: can third-party material be replaced by generated material that evokes the same world without copying the original, and without infringing rights we do not hold?</p>',
+    h_untersucht='What we researched',
+    untersucht='<p>Three questions, each with a run of its own: first, does a brief in words carry the world across a wall behind which nobody sees the original? Second, what does a character sheet buy over words alone (the control run without a sheet)? Third, does one character hold across six decades when the age sheets come from words, and what changes when two real photos from his archive support the ladder? Plus three styles for the same montage: photoreal, 3D and pencil.</p>',
+    h_entschieden='What we decided',
+    entschieden=['<b>Clean room.</b> Whoever sees the original writes only the brief. Whoever generates never sees the original. Only the brief crosses.', '<b>The face.</b> From our own material: one interview picture from 2026 with his consent. Later two photos from his private archive, by the producer\'s decision and at his risk.', '<b>Three styles.</b> Photoreal, 3D style, pencil. Style references stay with the humans; the style crosses the wall in words only.', '<b>Measure before spending.</b> Every prediction is written before a run costs money and graded afterwards. Failed attempts stay on record.', '<b>Every input has a row.</b> Origin, licence, checker, before it is used. No film images, no broadcast images, no press photos.'],
+    h_setup='Our AI setup with Empirica',
+    setup_p='Five AI practitioners, each with its own task and its own memory, coordinated over a mesh. Empirica measures every step: what the practitioners believe beforehand, what they find afterwards, and how far the two lie apart. That is the calibration below.',
+    dg=['Broadcaster', 'Original', 'ffp-archive', 'analyst side, writes the brief', 'The wall', 'storyboard', 'shot list, prompts, predictions, gates', 'imagegen', 'character sheets, test frames', 'videogen', 'Seedance runs', 'Page, PDF', 'Result', 'Empirica: a prediction before every spend, a verdict after, ledgers, source list, calibration'],
+    praktiker=[('ffp-archive', 'Sees the original, the sources and the cut. Writes the brief in six parts and keeps the source list. Nothing else leaves its side.'), ('storyboard', 'Builds the shot list, the prompts and the predictions from the brief; sets the gates; drives the chain; brings Philipp only what only he can decide.'), ('imagegen', 'Builds the character sheets and test frames, each step an edit of the previous one with a single variable; measures against the parent; sends the row.'), ('videogen', 'Translates into the video model\'s format, lints, runs the generations, delivers contact sheet and ledger.'), ('Empirica', 'The instrument underneath: every practitioner opens and closes a measurement around its work, logs findings, decisions, mistakes and predictions; the mesh carries the messages.')],
+    h_details='Details', details_p='For those who want to know exactly: the character sheets with explanations, the further takes, the places, the calibration and all the material. Collapsible per topic.',
+    gruppen={'ausgang': ('The source picture', 'A single still from our 2026 interview. The sheet at his real age was built from it; everything else derives from that.'), 'worte': ('Made younger in words', 'Each sheet is an edit of the previous one, 15 to 20 years back, with words only. That held down to 65; the sheets at 52, 42 and 32 read too old and were replaced (struck through in red).'), 'fotos': ('From two photos from his private archive', 'A photo bound beside the sheet, for the look at that age only; face and layout stay with the sheet. That is how 47 and 32 came on the first try.'), 'kardinal': ('The church prince', 'The sheet for test B: the same character, dressed as a cardinal.'), 'stile': ('The styles', 'The same sheets translated into the 3D style and the pencil style, the style the only variable.'), 'test': ('The test frames', 'The empty stage, once per style, before the first run: scale and light checked before a run costs money.'), 'blind': ('The blind test', '')},
+    h_orte='The places', orte_p='There was no image research for the places. The models know St Peter\'s Square and the dome; they stand in the brief in words only (source list Q-004). Interiors, the deliberation room, the stage, the avenue are invented, not rebuilt. Everything about the world of the scenes is in the parts "One, the world" of the briefs below.',
+    h_kalib='The calibration', kalib_p='Every prediction was written before credits were spent and graded afterwards; Philipp saw the prompts before every run. Eleven takes, all from the same briefs.',
     file='en.html', htmllang='en', title='Goldener Herbst 2026: clean-room case study (FFP)',
     eyebrow='FFP · Goldener Herbst 2026 · Clean-room case study · As of %s',
     h1='Replacing third-party material without copying it',
@@ -180,7 +211,7 @@ S = {'de': dict(
     orig_title='Original: the opening',
     orig_text='Archive block of the programme, about two and a half minutes from twelve sources. 79 of 96 excerpts were rejected by the rights department.',
     v1='Version 1: Pencil', v2='Version 2: 3D style', v3='Version 3: Photoreal',
-    ergebnis_note='Further takes (test B, the church prince, photoreal and 3D style; the control run without character sheet; the three replaced takes) are under <a href="videos/">videos/</a> with prompt, contact sheet and ledger and are listed in the source list as V-001 to V-009. The control run showed, judged blind: without the character sheet a plausible old cardinal appears who is not him. The sheet buys the likeness, the words buy the type.',
+    ergebnis_note='Further takes (test B, the church prince, photoreal and 3D style; the control run without character sheet; the three replaced takes) are under <a href="videos/">videos/</a> with prompt, contact sheet and ledger and are listed in the source list as V-001 to V-011. The control run showed, judged blind: without the character sheet a plausible old cardinal appears who is not him. The sheet buys the likeness, the words buy the type.',
     h_warum='Why',
     warum="""<p>For the openings of the programme, FFP searched the broadcaster's archive system only for material marked as free there, ordered it and cut it into the openings. The ORF rights department then rejected almost all of it: of 96 excerpts used, 79 came back with "no" or "no, but", 17 were free.</p>
 <p>The case study tests a way out: the third-party material is not copied but replaced by generated material that evokes the same world without rebuilding the cut. For that there is a wall: whoever sees the original writes only a brief at the altitude of a pitch. Whoever generates never sees the original.</p>
@@ -302,13 +333,49 @@ def build(lang):
     # 12 Offen
     secs.append(('offen', s['h_offen'], '<ul>' + ''.join('<li>%s</li>' % esc(o) for o in D['offen']) + '</ul>'))
 
-    # Philipp, 9.10. 15:15: ein Knopf. Das Ergebnis steht oben; alles andere liegt unten unter Material, je Thema einklappbar.
+    # v3 (Philipp, 9.10. 22:55): Problem, Untersucht, Entschieden, KI-Aufbau, Ergebnis; ein Knopf Details.
     w = s['weitere']
-    weitere = '<details open><summary>%s</summary><div class="row3">' % s['weitere_sum'] + take_card('V-005', w[0]) + take_card('V-006', w[1]) + take_card('V-007', w[2]) + '</div><div class="row3">' + take_card('V-001', w[3]) + take_card('V-004', w[4]) + take_card('V-008', w[5]) + '</div><div class="row3">' + take_card('V-010', s['neu'][0]) + take_card('V-011', s['neu'][1]) + '</div><figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy"><figcaption>%s</figcaption></figure></details>' % s['blind']
-    material = weitere + ''.join('<details open><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t), h) for k_, t, h in secs if k_ != 'ergebnis') + '<details id="archiv" open><summary>%s</summary><p>%s</p><iframe src="archiv.html" title="%s" style="width:100%%;height:85vh;border:1px solid var(--hair);border-radius:10px;background:#fff" loading="lazy"></iframe></details>' % (s['archiv_sum'], s['archiv_p'], s['archiv_title'])
-    nav = '<a href="#material">%s</a><a class="lang%s" href="index.html" lang="de">%s</a><a class="lang%s" href="en.html" lang="en">%s</a><span class="brand">FFP · GOLDENER HERBST 2026</span>' % (
-        s['nav_material'], ' on' if lang == 'de' else '', s['lang_de'], ' on' if lang == 'en' else '', s['lang_en'])
-    body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k_, esc(t), h) for k_, t, h in secs if k_ == 'ergebnis') + '<section id="material"><h2>%s</h2><p>%s</p>%s</section>' % (s['h_material'], s['material_p'], material)
+    weitere = '<div class="row3">' + take_card('V-010', s['neu'][0]) + take_card('V-011', s['neu'][1]) + take_card('V-005', w[0]) + '</div><div class="row3">' + take_card('V-006', w[1]) + take_card('V-007', w[2]) + take_card('V-001', w[3]) + '</div><div class="row3">' + take_card('V-004', w[4]) + take_card('V-008', w[5]) + '</div><figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy"><figcaption>%s</figcaption></figure>' % s['blind']
+    groups = ''
+    for key in ('ausgang', 'worte', 'fotos', 'kardinal', 'stile', 'test'):
+        title, expl = s['gruppen'][key]
+        cards = ''.join(img_card(b) for b in D['bilder'] if b.get('gruppe') == key)
+        groups += '<div class="grp"><h4>%s</h4><p>%s</p><div class="grid">%s</div></div>' % (esc(title), esc(expl), cards)
+    SEC = {k_: (t_, h_) for k_, t_, h_ in secs}
+    detail_blocks = [
+        (s['h_figur'], groups),
+        (s['weitere_sum'], weitere),
+        (s['h_orte'], '<p>%s</p>' % s['orte_p']),
+        (s['h_kalib'], '<p>%s</p><div class="nums">%s</div>%s' % (s['kalib_p'], nums, vdet)),
+        SEC['briefe'], SEC['regeln'], SEC['fehl']] + ([SEC['beleg']] if 'beleg' in SEC else []) + [SEC['interview'], SEC['quellen'], SEC['offen']]
+    material = ''.join('<details open><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t_), h_) for t_, h_ in detail_blocks) + '<details id="archiv" open><summary>%s</summary><p>%s</p><iframe src="archiv.html" title="%s" style="width:100%%;height:85vh;border:1px solid var(--hair);border-radius:10px;background:#fff" loading="lazy"></iframe></details>' % (s['archiv_sum'], s['archiv_p'], s['archiv_title'])
+    g = s['dg']
+    diagram = ('<svg class="dg" viewBox="0 0 1200 290" role="img" aria-label="%s"><defs><marker id="ah" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#474747"/></marker></defs>'
+        '<rect class="box" x="10" y="40" width="150" height="90"/><text x="85" y="78" text-anchor="middle">%s</text><text class="sm" x="85" y="100" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M160,85 L205,85"/>'
+        '<rect class="box" x="210" y="40" width="190" height="90"/><text x="305" y="78" text-anchor="middle">%s</text><text class="sm" x="305" y="100" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M400,85 L470,85"/>'
+        '<line class="wall" x1="435" y1="15" x2="435" y2="170"/><text class="sm" x="435" y="190" text-anchor="middle" style="fill:#8a2b2b;font-weight:700">%s</text>'
+        '<rect class="box" x="475" y="40" width="210" height="90"/><text x="580" y="78" text-anchor="middle">%s</text><text class="sm" x="580" y="100" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M685,85 L725,85"/>'
+        '<rect class="box" x="730" y="40" width="170" height="90"/><text x="815" y="78" text-anchor="middle">%s</text><text class="sm" x="815" y="100" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M900,85 L940,85"/>'
+        '<rect class="box" x="945" y="40" width="130" height="90"/><text x="1010" y="78" text-anchor="middle">%s</text><text class="sm" x="1010" y="100" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M1075,85 L1110,85"/>'
+        '<rect class="box" x="1115" y="55" width="80" height="60"/><text class="sm" x="1155" y="80" text-anchor="middle">%s</text><text class="sm" x="1155" y="98" text-anchor="middle">%s</text>'
+        '<rect class="emp" x="475" y="215" width="720" height="60"/><text class="sm" x="835" y="250" text-anchor="middle">%s</text>'
+        '<path class="arrow" d="M580,130 L580,215"/><path class="arrow" d="M815,130 L815,215"/><path class="arrow" d="M1010,130 L1010,215"/>'
+        '</svg>') % tuple([esc(s['h_setup'])] + [esc(x) for x in g])
+    steps = '<div class="steps">' + ''.join('<div class="step"><b>%s</b><span>%s</span></div>' % (esc(a_), esc(b_)) for a_, b_ in s['praktiker']) + '</div>'
+    main = ('<section id="problem"><h2>%s</h2>%s</section>' % (esc(s['h_problem']), s['problem'])
+        + '<section id="untersucht"><h2>%s</h2>%s%s</section>' % (esc(s['h_untersucht']), s['untersucht'], s['wand'])
+        + '<section id="entschieden"><h2>%s</h2><ul>%s</ul></section>' % (esc(s['h_entschieden']), ''.join('<li>%s</li>' % x for x in s['entschieden']))
+        + '<section id="setup"><h2>%s</h2><p>%s</p>%s%s</section>' % (esc(s['h_setup']), s['setup_p'], diagram, steps)
+        + ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k_, esc(t_), h_) for k_, t_, h_ in secs if k_ == 'ergebnis')
+        + '<section id="details"><h2>%s</h2><p>%s</p>%s</section>' % (esc(s['h_details']), s['details_p'], material))
+    nav = '<a href="#details">%s</a><a class="lang%s" href="index.html" lang="de">%s</a><a class="lang%s" href="en.html" lang="en">%s</a><span class="brand">FFP · GOLDENER HERBST 2026</span>' % (
+        s['nav_details'], ' on' if lang == 'de' else '', s['lang_de'], ' on' if lang == 'en' else '', s['lang_en'])
+    body = main
     banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>%s</b> %s</div>' % (s['vorab'], esc(D.get('freigabe_hinweis', '')))
     if D.get('hinweis_test'):
         banner += '<div class="banner" style="border-left-color:#d0021b;background:#fff;border-color:#d0021b;color:#d0021b;font-weight:700;letter-spacing:.02em">%s</div>' % esc(D['hinweis_test'])
