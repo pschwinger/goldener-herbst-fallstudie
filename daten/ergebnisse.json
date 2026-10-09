@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 21:10 CEST",
+  "stand": "2026-10-09 21:15 CEST",
   "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS EINEM EINZIGEN BILD VON ARMIN MÜLLER-STAHL ENTSTANDEN, AUFGENOMMEN IN UNSEREM INTERVIEW 2026, IM ALTER VON 90 JAHREN. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS. DREI WEITERE BILDER, ER ALS JUNGER MANN, IM MITTLEREN ALTER UND ALS ÄLTERER MANN, MÜSSEN NOCH ERSTELLT WERDEN.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
@@ -167,13 +167,13 @@
       "id": "G-023",
       "datei": "sheet1_sketch_c1_pro.png",
       "titel": "Blatt 1 im Bleistift-Stil",
-      "status": "R-001 bestanden, 9.10. 16:55 (Zeile in der Quellenliste folgt)"
+      "status": "R-001 bestanden, 9.10. 16:55"
     },
     {
       "id": "G-024",
       "datei": "testframe_shot14_sketch_c1_pro.png",
       "titel": "Testbild, die leere Bühne, Bleistift-Stil",
-      "status": "angenommen, 9.10. 17:05 (Zeile in der Quellenliste folgt)"
+      "status": "angenommen, 9.10. 17:05"
     },
     {
       "id": "H-003",

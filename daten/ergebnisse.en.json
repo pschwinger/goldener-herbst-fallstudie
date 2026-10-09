@@ -109,11 +109,11 @@
     },
     "G-023": {
       "titel": "Sheet 1 in the pencil style",
-      "status": "R-001 passed, 9 Oct 16:55 (source-list row to follow)"
+      "status": "R-001 passed, 9 Oct 16:55"
     },
     "G-024": {
       "titel": "Test frame, the empty stage, pencil style",
-      "status": "accepted, 9 Oct 17:05 (source-list row to follow)"
+      "status": "accepted, 9 Oct 17:05"
     }
   },
   "fehlversuche": {
