@@ -1,0 +1,150 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-09T22:24:17",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 30s generate_audio=false direct",
+  "job_id": "bc396c2d-d7ac-4e7d-b3e4-ba1d07632119",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261009_202448_bc396c2d-d7ac-4e7d-b3e4-ba1d07632119.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age32_sketch_c1_pro.png",
+      "source_sha256": "17be23eb5745af98933b4dc418d89ccb900f8aa9b1093126c1e89dac85398f0b",
+      "bound": "out/gh-A3/ref1_sheet1_age32_sketch_c1_pro_1920x1080.png",
+      "bound_sha256": "1f047545baeb3b7a3032988404b21db3af9b8c008de636be8f687931ddbd1b11"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age47_sketch_c1_pro.png",
+      "source_sha256": "a0ee4421bbba448b387408a67f4a3b5d94fec748a8ba55d7012d1ce748e778d8",
+      "bound": "out/gh-A3/ref2_sheet1_age47_sketch_c1_pro_1920x1080.png",
+      "bound_sha256": "a56365e55ed3685a5201b6881f0536e95f1befe6ec787691d88f0af14862eb06"
+    },
+    {
+      "image": "@Image3",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age65_sketch_c1_pro.png",
+      "source_sha256": "88585a5ad0163b4fd97709a821c1a517faa12a74efe86467660247407592f3aa",
+      "bound": "out/gh-A3/ref3_sheet1_age65_sketch_c1_pro_1920x1080.png",
+      "bound_sha256": "8026bf3686555d93a36e47343b5ad61771b3b25b90945eab021dd251119ec752"
+    },
+    {
+      "image": "@Image4",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_sketch_c1_pro.png",
+      "source_sha256": "836244f8514fe81edde969744fd79a1e518a9780c44c79e50d197d91efdc8fd2",
+      "bound": "out/gh-A3/ref4_sheet1_sketch_c1_pro_1920x1080.png",
+      "bound_sha256": "2e082a424c079c30de1aed0e1945ee2aff998649ff9d3e626218161334b69126"
+    },
+    {
+      "image": "@Image5",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/testframe_shot14_sketch_c1_pro.png",
+      "source_sha256": "3c4db8ed664fd280e20bf6d422c5e83ce008a8a33f1e1cf9b5b24e90038bec1b",
+      "bound": "out/gh-A3/ref5_testframe_shot14_sketch_c1_pro_1920x1080.png",
+      "bound_sha256": "3b31de16d86e58db86f9869ab61d558a7cb8189aba7662c70f6d112ba4dfdc85"
+    }
+  ],
+  "prompt_file": "gh_A3b_v2_full.prompt.txt",
+  "prompt_sha256": "43d44fcb06fcf99e4bac1f59842646bfd7775d1c129fbeb8cc3afc1be8e48a95",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 18.0 outside 10-15 (warn): 539w / 30s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "721"
+      }
+    ],
+    "format": {
+      "duration": "30.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 360,
+    "charged_at_source": 360,
+    "balance": {
+      "before": 4597.5,
+      "after": 3877.5,
+      "note": "charged together with A-1 v5 at 20:24Z"
+    },
+    "basis": "higgsfield account transactions 2026-10-09 20:24Z"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 721 f, 30.04 s, NO audio stream",
+    "cuts_detected": [
+      2.0,
+      4.13,
+      6.13,
+      6.79,
+      8.33,
+      10.25,
+      13.33,
+      16.08,
+      17.75,
+      19.71,
+      21.33,
+      22.88,
+      24.46
+    ],
+    "cuts_note": "13 detections: 12 stamps plus one inside the fur-hat shot (6.79) where the lighting changes",
+    "saturation_SATAVG_8bit_per_shot": [
+      0.9,
+      0.9,
+      0.9,
+      0.6,
+      0.7,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.7,
+      0.7,
+      0.7,
+      0.5
+    ],
+    "saturation_note": "13 of 13 fully monochrome; no colour anywhere"
+  },
+  "gates_by_eye_1080p": {
+    "style_graphite_throughout": {
+      "belief": "PASS, 13 of 13: pencil line and hatching in every shot, no colour at all (V-009 kept red on the cardinal and candles; v2 does not)",
+      "conf": 0.95
+    },
+    "1_identity_across_ladder": {
+      "belief": "HOLDS as one drawn man: moustache and dark hair in 2, 3, 4, 8 (cap portrait reads about 40), clean-shaven with glasses in 5, 6, 9 (5 reads about 75, older than written), old in 10-13; sheet match is Philipp's",
+      "conf": 0.7
+    },
+    "2_motifs": {
+      "belief": "13 of 13; the dinner renders an eighteenth-century powdered wig with the bow tie",
+      "conf": 0.85
+    },
+    "4_no_text": {
+      "belief": "PARTIAL: plate-shaped marks on the avenue car, not legible",
+      "conf": 0.75
+    },
+    "9_no_insignia": {
+      "belief": "FAIL: star shoulder boards and collar patches on the uniform (shot 6), as in every A run",
+      "conf": 0.9
+    },
+    "7_fermata": {
+      "belief": "PASS: alone on the sketched stage, dims",
+      "conf": 0.85
+    },
+    "10_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  },
+  "storyboard_predictions_graded": {
+    "P1_sketch_13_of_13_0.75": "HELD: 13 of 13 fully monochrome",
+    "P2_same_man_across_pencil_ladder_0.5": "HELD on my read (0.7); Philipp decides",
+    "P3_moustache_in_2_3_4_8_0.7": "HELD",
+    "P4_red_accents_reappear_0.6": "FAILED: no colour anywhere"
+  }
+}
