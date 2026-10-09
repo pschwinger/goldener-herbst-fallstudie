@@ -174,8 +174,11 @@ secs.append(('quellen', 'Quellenliste', '<p>Jedes Bild, das in einen Lauf geht o
 # 12 Offen
 secs.append(('offen', 'Offen', '<ul>' + ''.join('<li>%s</li>' % esc(o) for o in D['offen']) + '</ul>'))
 
-nav = ''.join('<a href="#%s">%s</a>' % (k, esc(t)) for k, t, _ in secs) + '<a href="archiv.html" style="background:#1f1f1f;color:#fff">Archiv (intern, Passwort)</a><span class="brand">FFP · GOLDENER HERBST 2026</span>'
-body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k, esc(t), h) for k, t, h in secs)
+# Philipp, 9.10. 15:15: ein Knopf. Das Ergebnis steht oben; alles andere liegt unten unter Material, je Thema einklappbar.
+weitere = '<details><summary>Weitere Takes (Test B, Kontrolle, ersetzte Takes)</summary><div class="row3">' + take_card('V-005', 'Test B, fotoreal') + take_card('V-006', 'Test B, 3D-Stil') + take_card('V-007', 'Test B, Kontrolle ohne Figurenblatt') + '</div><div class="row3">' + take_card('V-001', 'Test A fotoreal, Take 1 (ersetzt)') + take_card('V-004', 'Test B fotoreal, Take 1 (ersetzt)') + '</div><figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy"><figcaption><b>Blind-Test</b>Links die Kontrolle ohne Blatt, Mitte der Take mit Blatt, rechts ein Interviewbild. Philipp sah es blind: links ist er es nicht. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ (H-003).</figcaption></figure></details>'
+material = weitere + ''.join('<details><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t), h) for k, t, h in secs if k != 'ergebnis') + '<details><summary>Archiv (intern)</summary><p><a class="btn" href="archiv.html">Archiv öffnen</a></p></details>'
+nav = '<a href="#material">Material</a><span class="brand">FFP · GOLDENER HERBST 2026</span>'
+body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k, esc(t), h) for k, t, h in secs if k == 'ergebnis') + '<section id="material"><h2>Material</h2><p>Alles, was zum Ergebnis geführt hat: die weiteren Takes und Bilder, die Briefe, Vorhersagen, Regeln, Fehlversuche, die Belege zum Download, das Interview, die Quellenliste und das interne Archiv. Je Thema einklappbar.</p>' + material + '</section>'
 banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>Vorabfassung.</b> %s</div>' % esc(D.get('freigabe_hinweis', ''))
 page = """<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
