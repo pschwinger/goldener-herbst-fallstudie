@@ -98,10 +98,7 @@ secs.append(('ergebnis', 'Ergebnis', """
 <p>Zwei Tests, dieselbe Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren? Links das Original, das nicht verwendet werden darf; daneben die beiden erzeugten Fassungen, fotoreal und im 3D-Stil, aus demselben Brief und demselben Figurenblatt.</p>
 <h3>Test A: die Einleitung, 30 Sekunden Montage über sechs Jahrzehnte</h3>
 <div class="row3">""" + original_card('Original: die Einleitung', 'Archivblock der Sendung, rund zweieinhalb Minuten aus zwölf Quellen. 79 von 96 Ausschnitten wurden von der Rechteabteilung zurückgewiesen.') + take_card('V-002', 'Fotoreal') + take_card('V-003', '3D-Stil') + """</div>
-<h3>Test B: eine Sequenz, der Kirchenfürst, 24 Sekunden</h3>
-<p>Hier gibt es kein zeigbares Original: wenige Sekunden aus einem Kinofilm, dessen Rechte bei Dritten liegen. Der Brief beschreibt deshalb eine neue, eigene Szene in derselben Welt. Die dritte Karte ist der Kontrolllauf: derselbe Text, kein Figurenblatt.</p>
-<div class="row3">""" + take_card('V-005', 'Fotoreal') + take_card('V-006', '3D-Stil') + take_card('V-007', 'Kontrolle ohne Figurenblatt') + """</div>
-<figure style="max-width:960px;margin-top:10px"><img src="bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg" alt="Blind-Test" loading="lazy" onerror="this.parentNode.classList.add('missing')"><div class="pend">noch nicht geliefert<br><span class="mono">bilder/gh_B0_vs_B1v3_vs_interview_shot4.jpg</span></div><figcaption><b>Blind-Test</b>Links die Kontrolle ohne Blatt, Mitte der Take mit Blatt, rechts ein Interviewbild. Philipp sah es blind: links ist er es nicht. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ. Nur für Menschen, nie Bildeingabe (H-003).</figcaption></figure>"""))
+<p class="note">Weitere Takes (Test B, der Kirchenfürst, fotoreal und 3D-Stil; der Kontrolllauf ohne Figurenblatt; die beiden ersetzten ersten Takes) liegen mit Prompt, Kontaktbogen und Ledger unter <a href="videos/">videos/</a> und sind in der Quellenliste als V-001 bis V-007 geführt. Der Kontrolllauf ergab, blind beurteilt: ohne Figurenblatt entsteht ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ.</p>"""))
 
 # 2 Warum
 secs.append(('warum', 'Warum', """
@@ -147,7 +144,7 @@ secs.append(('regeln', 'Regeln', """
 <h4>Prompt-Regeln aus den Läufen</h4><ul>""" + ''.join('<li>%s</li>' % esc(b) for b in D.get('prompt_regeln', [])) + '</ul><h4>Beobachtungen</h4><ul>' + ''.join('<li>%s</li>' % esc(b) for b in D['beobachtungen']) + '</ul>'))
 
 # 8 Fehlversuche
-secs.append(('fehl', 'Fehlversuche', '<p>Bleiben stehen, neben der Korrektur. Die beiden ersetzten Takes sind hier ansehbar, nicht im Ergebnis.</p><div class="row3">' + take_card('V-001', 'Test A fotoreal, Take 1 (ersetzt)') + take_card('V-004', 'Test B fotoreal, Take 1 (ersetzt)') + '</div><table><tr><th>Zeile</th><th>Was</th><th>Warum</th></tr>' + ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(f['id']), esc(f['was']), esc(f['warum'])) for f in D['fehlversuche']) + '</table>'))
+secs.append(('fehl', 'Fehlversuche', '<p>Bleiben stehen, neben der Korrektur; die ersetzten Takes liegen mit Ledger unter <a href="videos/">videos/</a>.</p><table><tr><th>Zeile</th><th>Was</th><th>Warum</th></tr>' + ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(f['id']), esc(f['was']), esc(f['warum'])) for f in D['fehlversuche']) + '</table>'))
 
 # 9 Beleg
 if D.get('beleg_pdf'):
