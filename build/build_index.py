@@ -94,6 +94,7 @@ figcaption{padding:8px 10px;font-size:.82rem;color:var(--muted);line-height:1.4}
 details summary{cursor:pointer;font-weight:700;padding:8px 0}
 .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}.num{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:10px 12px}.num b{display:block;font-size:1.5rem;font-family:Georgia,serif;font-weight:500}.num span{font-size:.78rem;color:var(--muted)}
 .btn{display:inline-block;background:#1f1f1f;color:#fff;text-decoration:none;font:700 13px system-ui,sans-serif;padding:9px 16px;border-radius:8px}
+.struck{position:relative;border-color:#d0021b}.struck img{opacity:.5}.struck::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top right,transparent 48.6%,#d0021b 48.6%,#d0021b 51.4%,transparent 51.4%)}.struck figcaption b{text-decoration:line-through;text-decoration-color:#d0021b;text-decoration-thickness:2px;color:#d0021b}
 footer{margin-top:70px;border-top:1px solid var(--hair);padding-top:16px;font-size:.82rem;color:var(--muted)}
 """
 
@@ -260,7 +261,7 @@ def build(lang):
     briefs = ''.join('<details open><summary>%s</summary><div class="brief">%s</div></details>' % (esc(t), md2html(rd(s['briefdir'] + f))) for t, f in zip(s['brief_titles'], BRIEF_FILES))
     secs.append(('briefe', s['h_briefe'], '<p class="note">%s</p>' % s['briefe_note'] + briefs))
     # 5 Figurenblatt
-    imgs = ''.join('<figure><img src="bilder/%s" alt="%s" loading="lazy" onerror="this.parentNode.classList.add(\'missing\')"><div class="pend">%s<br><span class="mono">bilder/%s</span></div><figcaption><b>%s · %s</b>%s</figcaption></figure>' % (esc(b['datei']), esc(b['titel']), s['pend'], esc(b['datei']), esc(b['id']), esc(b['titel']), esc(b['status'])) for b in D['bilder'] if b['id'] != 'H-003')
+    imgs = ''.join('<figure%s><img src="bilder/%s" alt="%s" loading="lazy" onerror="this.parentNode.classList.add(\'missing\')"><div class="pend">%s<br><span class="mono">bilder/%s</span></div><figcaption><b>%s · %s</b>%s</figcaption></figure>' % (' class="struck"' if b.get('gestrichen') else '', esc(b['datei']), esc(b['titel']), s['pend'], esc(b['datei']), esc(b['id']), esc(b['titel']), esc(b['status'])) for b in D['bilder'] if b['id'] != 'H-003')
     secs.append(('figur', s['h_figur'], '<p>%s</p><div class="grid">%s</div>' % (s['figur_p'], imgs)))
     # 6 Vorhersagen
     v = D['vorhersagen']; k = D['kosten']

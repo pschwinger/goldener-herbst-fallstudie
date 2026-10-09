@@ -1,6 +1,6 @@
 {
   "_hinweis": "English overlay for build/build_index.py. Only text fields; keyed by id so numbers, files and status live once, in ergebnisse.json. Maintained by storyboard.",
-  "hinweis_test": "ALL IMAGES AND VIDEOS ON THIS PAGE WERE CREATED FROM A SINGLE PICTURE OF ARMIN MÜLLER-STAHL, TAKEN IN OUR 2026 INTERVIEW, AT THE AGE OF 90. THIS IS A TEST, NOT THE FINAL RESULT. THREE MORE IMAGES, HIM AS A YOUNG MAN, IN MIDDLE AGE AND AS AN OLDER MAN, STILL HAVE TO BE CREATED.",
+  "hinweis_test": "ALL IMAGES AND VIDEOS ON THIS PAGE WERE CREATED FROM THREE PHOTOS OF ARMIN MÜLLER-STAHL: ONE PICTURE FROM OUR 2026 INTERVIEW, AT THE AGE OF 90, AND TWO PHOTOS FROM HIS PRIVATE ARCHIVE. THE CHARACTER SHEETS WERE MADE FROM THESE. THIS IS A TEST, NOT THE FINAL RESULT.",
   "freigabe_hinweis": "Preliminary version, released by Philipp Schwinger (FFP) on 9 Oct 2026. The written consent of Armin Müller-Stahl for the generated images is to follow (Q-001, Q-012, P-001); until then, images and videos appear here only as far as he has released them himself. Not legal advice.",
   "takes": {
     "V-001": {
@@ -85,15 +85,15 @@
     },
     "G-010": {
       "titel": "Age sheet 52",
-      "status": "passed"
+      "status": "struck 9 Oct 21:36: replaced by the new sheet 47 from the private-archive photo"
     },
     "G-011": {
       "titel": "Age sheet 42 (reads as 45)",
-      "status": "accepted"
+      "status": "struck 9 Oct 21:36: replaced by the new sheet 47 from the private-archive photo"
     },
     "G-012": {
       "titel": "Age sheet 32 (reads as 40; to be replaced by a sheet at about 47, Philipp 9 Oct 20:56)",
-      "status": "accepted"
+      "status": "struck 9 Oct 21:36: replaced by the new sheet 32 from the private-archive photo"
     },
     "G-018": {
       "titel": "Test frame, the empty stage, photoreal",
