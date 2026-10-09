@@ -1,0 +1,108 @@
+{
+  "run": "GH 2026 B-2 full (3D style)",
+  "stage": "full",
+  "started": "2026-10-09T08:06:00+02:00",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 24s generate_audio=false direct",
+  "job_id": "208cdd54-0f6c-4314-8edb-88f4b12d5484",
+  "transport_note": "harness --wait lost the response (rc 3 'no response received' at 08:50) while the job completed at 06:06Z; result fetched with generate get after the fact; NOT resubmitted",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet2_3d_c2_flash.png",
+      "source_sha256": "e6bb311880aef48e065bb78fb6673ae1b39bcd12abe5aeef588a3c9c48a43d80",
+      "bound": "ref1_sheet2_3d_c2_flash_1920x1080.png",
+      "bound_sha256": "cee00dce72d32b46dc5d7e14c5ae8ac9980135733b5764a4b0a29dd737bc790e"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_3d_c1_pro.png",
+      "source_sha256": "037567c8e17a20fdfa635f07ea2197b44805e479e9aa43b17907bd106bd13f2f",
+      "bound": "ref2_sheet1_3d_c1_pro_1920x1080.png",
+      "bound_sha256": "b12dba7ef4d327a6446baf4e9c44e0d8f99fc64ad3336698e366cfb6bf5a4b01"
+    }
+  ],
+  "prompt_file": "gh_B2_v1.prompt.txt",
+  "prompt_sha256": "abfb4deb8c77a55e9329e56dd751c58088b7fc141b2ee36701956284d4d8a050",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.8 outside 10-15 (warn): 474w / 24s"
+    ]
+  },
+  "credits": {
+    "quoted_before": 288,
+    "charged_at_source": 288,
+    "balance": {
+      "before": 5893.5,
+      "after": 5605.5
+    },
+    "basis": "higgsfield account transactions 2026-10-09 06:06Z Seedance 2.5 -288"
+  },
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 577,
+    "duration_s": 24.04,
+    "audio": "none"
+  },
+  "measured": {
+    "cuts_detected": [
+      4.88,
+      9.75,
+      13.21,
+      17.75
+    ],
+    "cuts_note": "4 of 4 within 0.25 s of the stamps; all visible at 0.25",
+    "camera_PSNR_first_vs_last": {
+      "shot1_drift": 18.3,
+      "shot2_push_in": 21.0,
+      "shot3_static": 15.9,
+      "shot4_static": 23.8,
+      "shot5_pull_back": 18.9,
+      "note": "shot 3's low value is subject motion (the two lean in; he lowers his chin to the table), not camera"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "7_non_photoreal_3D": {
+      "belief": "PASS: matte figures, simplified features throughout",
+      "conf": 0.95
+    },
+    "1_identity": {
+      "belief": "HOLDS as one 3D character in shots 1, 3, 4; sheet match is Philipp's call",
+      "conf": 0.65
+    },
+    "11_only_he_carries_the_bound_face": {
+      "belief": "PASS, weaker than photoreal: the other cardinals have varied faces but the 3D style gives them a family likeness; he alone has the cross and the bound face",
+      "conf": 0.7
+    },
+    "2_motifs": {
+      "belief": "PASS 5 of 5 with two deviations: smoke from the DOME'S LANTERN again despite the chimney wording; shot 3 stages him with his chin on the table between his hands rather than hands resting on it",
+      "conf": 0.85
+    },
+    "3_dress_without_invention": {
+      "belief": "PASS",
+      "conf": 0.9
+    },
+    "4_no_text": {
+      "belief": "PASS",
+      "conf": 0.85
+    },
+    "5_crowd_as_surface": {
+      "belief": "PARTIAL: the square and crowd are not in frame in either wide; dome and city only",
+      "conf": 0.8
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS",
+      "conf": 0.8
+    },
+    "8_camera": {
+      "belief": "PASS: drift on 1, push-in on 2, static 3 and 4, pull-back on 5",
+      "conf": 0.85
+    },
+    "9_format": {
+      "belief": "PASS: 24.04 s, no audio",
+      "conf": 0.95
+    }
+  }
+}

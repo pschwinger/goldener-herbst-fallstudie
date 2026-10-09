@@ -1,0 +1,137 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-08T22:07:40",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 30s generate_audio=false draft_job_id=None",
+  "job_id": "8bed2396-3811-448e-a424-fdbde82516cd",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261008_200749_8bed2396-3811-448e-a424-fdbde82516cd.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_3d_c1_pro.png",
+      "source_sha256": "037567c8e17a20fdfa635f07ea2197b44805e479e9aa43b17907bd106bd13f2f",
+      "bound": "out/gh-A2/ref1_sheet1_3d_c1_pro_1920x1080.png",
+      "bound_sha256": "b12dba7ef4d327a6446baf4e9c44e0d8f99fc64ad3336698e366cfb6bf5a4b01"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/testframe_shot14_3d_c1_pro.png",
+      "source_sha256": "28b3cde9e37a75a1b5c79132cb29323438a538a010142265dc6a5896aa25e424",
+      "bound": "out/gh-A2/ref2_testframe_shot14_3d_c1_pro_1920x1080.png",
+      "bound_sha256": "0d6b37597a12f15bbd5e2119aeca0b3d52e72938c0af3f2552d23d596d5ebd44"
+    }
+  ],
+  "prompt_file": "gh_A2_full.prompt.txt",
+  "prompt_sha256": "dfc8a69e75088b3a94f62f026e4befa4b527180b0c4cafe9fa69519a37a32b75",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.1 outside 10-15 (warn): 574w / 30s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "721"
+      }
+    ],
+    "format": {
+      "duration": "30.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 360,
+    "charged_at_source": 360,
+    "balance": {
+      "before": 7141.5,
+      "after": 6781.5
+    },
+    "basis": "higgsfield account transactions 2026-10-08 20:07Z Seedance 2.5 -360"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 721 f, 30.04 s, NO audio stream",
+    "cuts_detected": [
+      1.83,
+      4.04,
+      5.96,
+      7.58,
+      9.08,
+      11.75,
+      15.08,
+      17.04,
+      18.46,
+      20.71,
+      22.46,
+      24.88
+    ],
+    "cuts_note": "12 of 12, 13 shots; closer to the stamps than A-1 (max drift +1.6 s at the avenue)",
+    "saturation_SATAVG_8bit": {
+      "shot1_door": 11.9,
+      "shot2_cap": 0.5,
+      "shot3_car": 14.7,
+      "note": "shot 1 is NOT black and white in this run (warm colour); shot 2 is clean mono"
+    },
+    "dim_shot13_YAVG": {
+      "24-25": 106.4,
+      "25-26": 50.6,
+      "26-27": 49.7,
+      "27-28": 45.7,
+      "28-29": 40.9,
+      "29-30": 35.5,
+      "note": "front-loaded again; ends less dark than A-1 (35 vs 30)"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "7_non_photoreal_3D_throughout": {
+      "belief": "PASS: matte-shaded figures, simplified features, clean edges in every shot",
+      "conf": 0.95
+    },
+    "1_identity_one_character": {
+      "belief": "HOLDS as one 3D character across all 12 shots that show him; likeness to sheet1_3d is Philipp's call",
+      "conf": 0.7
+    },
+    "2_motif_and_decade": {
+      "belief": "13 of 13 motifs; AGES FAIL again (old in every shot, no sheets could help here); shot 11 tuxedo + bow tie instead of cravat",
+      "conf": 0.85
+    },
+    "3_grades_distinct": {
+      "belief": "PARTIAL: shot 1 door rendered warm colour, not b/w (SATAVG 11.9); the rest distinct",
+      "conf": 0.9
+    },
+    "4_no_text_no_logos": {
+      "belief": "FAIL: shot 7 car carries a readable licence plate ('N66 8119') and a Mercedes star",
+      "conf": 0.95
+    },
+    "5_companion_faces": {
+      "belief": "faces readable in shot 3 (woman, two children, 3D figures); allowed by Philipp 21:56, not scored",
+      "conf": null
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS",
+      "conf": 0.8
+    },
+    "7b_fermata_dim": {
+      "belief": "PARTIAL: alone, held, dims front-loaded, ends at YAVG 35",
+      "conf": 0.85
+    },
+    "8_camera_static_except_7": {
+      "belief": "PASS by eye",
+      "conf": 0.8
+    },
+    "9_no_insignia": {
+      "belief": "FAIL on shot 6 (shoulder boards, collar patches); shot 2's cap is a plain dark cap this time, no badge",
+      "conf": 0.9
+    },
+    "10_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  },
+  "gate5_note": "not scored from this run on (Philipp 21:56: faces allowed)"
+}

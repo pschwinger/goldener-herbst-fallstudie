@@ -1,0 +1,200 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "upgrade",
+  "started": "2026-10-08T21:39:32",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 30s generate_audio=false draft_job_id=c939a03d-c4cb-429f-8a1f-635928841b35",
+  "job_id": "bc4bccd0-aea1-4979-b367-1dbe3bb08fea",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261008_194004_bc4bccd0-aea1-4979-b367-1dbe3bb08fea.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age77_c1_flash.png",
+      "source_sha256": "8aafa9cec7c331497f167759c405bb6029c7692d1cf4d49f270d588b5f5430e2",
+      "bound": "out/gh-A1/ref1_sheet1_age77_c1_flash_1920x1080.png",
+      "bound_sha256": "a959edd498bafbc5662106386fa20795adb47cdd9a053c75b72269ee1df5b2e5"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age32_c3_flash_v7.png",
+      "source_sha256": "6f4765f5ee32de2a4343e5637c3448109dfaf974f80fb43b34fd80a3b10359a4",
+      "bound": "out/gh-A1/ref2_sheet1_age32_c3_flash_v7_1920x1080.png",
+      "bound_sha256": "b34da50dd016b6cd88bdf9c8f854005e39fabe774e63c18b507ebfd0885663e1"
+    },
+    {
+      "image": "@Image3",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age42_c3_flash_v3.png",
+      "source_sha256": "4fac39d77eb53b6dcff78941fec40c852b18a3fffb59cc436241301f6792ac86",
+      "bound": "out/gh-A1/ref3_sheet1_age42_c3_flash_v3_1920x1080.png",
+      "bound_sha256": "4544cdbf3d2c8d11f19424a83a19770a1773cdea5a266c94fe98e40b567f0993"
+    },
+    {
+      "image": "@Image4",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age52_c2_flash_v2.png",
+      "source_sha256": "2ad362b2f7bba9cb309fffea4892326b0d65eae5d0fcd6a4a34f0e67c66adda3",
+      "bound": "out/gh-A1/ref4_sheet1_age52_c2_flash_v2_1920x1080.png",
+      "bound_sha256": "25c11016cbc60008fc7279dd0dbc4cda379aaae8f54d56dca0703270fa9ec329"
+    },
+    {
+      "image": "@Image5",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age62_c1_flash.png",
+      "source_sha256": "153e14fb64ab2ee07e02c1819f6536503eddc872f51607a27c742e7a059e60e9",
+      "bound": "out/gh-A1/ref5_sheet1_age62_c1_flash_1920x1080.png",
+      "bound_sha256": "a8dd8aaf8441c9214b89335c768340a4935031ee2db1b23544b29b97e2e22917"
+    },
+    {
+      "image": "@Image6",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1a_realage_c3_pro.png",
+      "source_sha256": "d4292ea94df486b94b2bf48873026a5abd07f5ac01d8b77e6cc4e6a18c4fcf3e",
+      "bound": "out/gh-A1/ref6_sheet1a_realage_c3_pro_1920x1080.png",
+      "bound_sha256": "0a4fff97096f317af30a1d9391a78327efa9adf42b2f65367a27a4508c968029"
+    },
+    {
+      "image": "@Image7",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/testframe_shot14_photoreal_c3_flash_v2.png",
+      "source_sha256": "8a66659eeb8650bccbefde9fa64e6ca40946752af8516d2a47635d59d4357e36",
+      "bound": "out/gh-A1/ref7_testframe_shot14_photoreal_c3_flash_v2_1920x1080.png",
+      "bound_sha256": "2c71fbd0e2d71ae3c81b00aad86bcc54be5c6694d48849df1672cb880045931b"
+    }
+  ],
+  "prompt_file": "gh_A1_full.prompt.txt",
+  "prompt_sha256": "73d0d6f04dd817a4a81faa5c1f829b414e13ec32ff0c1fbd8dfbb1ce9fb7eecc",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.9 outside 10-15 (warn): 598w / 30s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "721"
+      }
+    ],
+    "format": {
+      "duration": "30.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": {
+      "upgrade": 360,
+      "basis": "generate cost with 7 refs + --draft false --draft_job_id, 21:38"
+    },
+    "charged_at_source": 360,
+    "balance": {
+      "before": 7501.5,
+      "after": 7141.5
+    },
+    "basis": "higgsfield account transactions 2026-10-08 19:40Z Seedance 2.5 -360",
+    "draft_plus_upgrade_total": 450
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "P16_take_kept": {
+    "verdict": "YES",
+    "evidence": "per-frame SSIM full(scaled 854x480) vs draft: mean 0.955 over 721 frames, none below 0.8; scene cuts at identical timestamps (2.42 4.13 5.92 8.04 9.92 12.63 15.71 17.96 19.71 21.33 22.58 24.42)"
+  },
+  "cli_note": "first upgrade attempt refused by CLI 1.1.20 validator ('Unsupported validation rule ... !params.draft || params.draft_job_id == null'); nothing charged; passing --draft false explicitly fixed it",
+  "measured": {
+    "output": "1920x1080, 721 f, 30.04 s, hevc, NO audio stream",
+    "cuts_detected": [
+      2.42,
+      4.13,
+      5.92,
+      8.04,
+      9.92,
+      12.63,
+      15.71,
+      17.96,
+      19.71,
+      21.33,
+      22.58,
+      24.42
+    ],
+    "shot_durations_rendered_s": {
+      "1": 2.42,
+      "2": 1.71,
+      "3": 1.79,
+      "4": 2.12,
+      "5": 1.88,
+      "6": 2.71,
+      "7_avenue": 3.08,
+      "8_guitar": 2.25,
+      "9_window": 1.75,
+      "10_desk": 1.62,
+      "11_dinner": 1.25,
+      "12_cardinal": 1.84,
+      "13_stage": 5.62
+    },
+    "saturation_SATAVG_8bit": {
+      "shot1": 0.8,
+      "shot2": 0.8,
+      "shot3": 11.0
+    },
+    "dim_shot13_YAVG": {
+      "24-25": 70.0,
+      "25-26": 41.0,
+      "26-27": 37.3,
+      "27-28": 34.6,
+      "28-29": 31.8,
+      "29-30": 29.9
+    },
+    "camera_drift_PSNR_first_vs_last_within_detected_shot": {
+      "shot5_field": 32.9,
+      "shot3_car": 24.5,
+      "shot8_guitar": 26.6,
+      "shot7_avenue_MOVE": 14.7,
+      "note": "static shots 24-33 dB (subject motion only), the one move 14.7 dB; by eye no camera motion on static shots"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "1_identity_same_man": {
+      "belief": "HOLDS as one man across the 12 shots that show him; whether he is the man in sheet 1 is Philipp's call (face review on this file)",
+      "conf": 0.6
+    },
+    "2_motif_and_decade": {
+      "belief": "motifs 13 of 13 PASS; AGES FAIL: he reads 65-85 in every shot, youngest about 50 (car, guitar, uniform); the 32/42/52/62 age sheets did not move him",
+      "conf": 0.85
+    },
+    "3_grades_distinct": {
+      "belief": "PASS",
+      "conf": 0.9
+    },
+    "4_no_text": {
+      "belief": "PASS: spines are gilt bands without letters (native crop checked), no captions; the cap cockade is an emblem, counted under gate 9",
+      "conf": 0.85
+    },
+    "5_no_companion_face": {
+      "belief": "PASS",
+      "conf": 0.9
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS: bright columned hall, cardinals standing in a row, no corridor, no guard, no crucifix, no poster",
+      "conf": 0.8
+    },
+    "7_fermata_dim": {
+      "belief": "PARTIAL: alone on the stage 5.6 s, two work lamps, ends near dark (YAVG 30); the dim is front-loaded (70 to 41 in the first second, then slow)",
+      "conf": 0.85
+    },
+    "8_camera_static_except_7": {
+      "belief": "PASS",
+      "conf": 0.85
+    },
+    "9_no_insignia": {
+      "belief": "FAIL: shot 2 officer's peaked cap with cockade and silver cord; shot 6 tunic with star epaulettes, collar patches, red piping (real-army look)",
+      "conf": 0.95
+    },
+    "10_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  },
+  "prompt_adaptation_suggestions": [
+    "gate 9: name the negatives (no epaulettes, no shoulder boards, no collar patches, no cockade, no cord, no piping); shot 2: 'a plain flat cloth cap without badge'",
+    "ages: numbers did not bind; describe the age in features (dark full hair, smooth unlined skin, a young man of thirty) and consider the A-C keyframes per shot as the stronger age carrier",
+    "dim: write it in timed phases (full warmth for the first three seconds, then an even dim to near dark over the last three)"
+  ]
+}

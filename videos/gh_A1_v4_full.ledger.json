@@ -1,0 +1,166 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-08T22:15:35",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 30s generate_audio=false direct",
+  "job_id": "9a75b720-b79a-4c3b-8958-b8c45ec1ebcd",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261008_201603_9a75b720-b79a-4c3b-8958-b8c45ec1ebcd.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age77_c1_flash.png",
+      "source_sha256": "8aafa9cec7c331497f167759c405bb6029c7692d1cf4d49f270d588b5f5430e2",
+      "bound": "out/gh-A1/ref1_sheet1_age77_c1_flash_1920x1080.png",
+      "bound_sha256": "a959edd498bafbc5662106386fa20795adb47cdd9a053c75b72269ee1df5b2e5"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age32_c3_flash_v7.png",
+      "source_sha256": "6f4765f5ee32de2a4343e5637c3448109dfaf974f80fb43b34fd80a3b10359a4",
+      "bound": "out/gh-A1/ref2_sheet1_age32_c3_flash_v7_1920x1080.png",
+      "bound_sha256": "b34da50dd016b6cd88bdf9c8f854005e39fabe774e63c18b507ebfd0885663e1"
+    },
+    {
+      "image": "@Image3",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age42_c3_flash_v3.png",
+      "source_sha256": "4fac39d77eb53b6dcff78941fec40c852b18a3fffb59cc436241301f6792ac86",
+      "bound": "out/gh-A1/ref3_sheet1_age42_c3_flash_v3_1920x1080.png",
+      "bound_sha256": "4544cdbf3d2c8d11f19424a83a19770a1773cdea5a266c94fe98e40b567f0993"
+    },
+    {
+      "image": "@Image4",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age52_c2_flash_v2.png",
+      "source_sha256": "2ad362b2f7bba9cb309fffea4892326b0d65eae5d0fcd6a4a34f0e67c66adda3",
+      "bound": "out/gh-A1/ref4_sheet1_age52_c2_flash_v2_1920x1080.png",
+      "bound_sha256": "25c11016cbc60008fc7279dd0dbc4cda379aaae8f54d56dca0703270fa9ec329"
+    },
+    {
+      "image": "@Image5",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age62_c1_flash.png",
+      "source_sha256": "153e14fb64ab2ee07e02c1819f6536503eddc872f51607a27c742e7a059e60e9",
+      "bound": "out/gh-A1/ref5_sheet1_age62_c1_flash_1920x1080.png",
+      "bound_sha256": "a8dd8aaf8441c9214b89335c768340a4935031ee2db1b23544b29b97e2e22917"
+    },
+    {
+      "image": "@Image6",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1a_realage_c3_pro.png",
+      "source_sha256": "d4292ea94df486b94b2bf48873026a5abd07f5ac01d8b77e6cc4e6a18c4fcf3e",
+      "bound": "out/gh-A1/ref6_sheet1a_realage_c3_pro_1920x1080.png",
+      "bound_sha256": "0a4fff97096f317af30a1d9391a78327efa9adf42b2f65367a27a4508c968029"
+    },
+    {
+      "image": "@Image7",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/testframe_shot14_photoreal_c3_flash_v2.png",
+      "source_sha256": "8a66659eeb8650bccbefde9fa64e6ca40946752af8516d2a47635d59d4357e36",
+      "bound": "out/gh-A1/ref7_testframe_shot14_photoreal_c3_flash_v2_1920x1080.png",
+      "bound_sha256": "2c71fbd0e2d71ae3c81b00aad86bcc54be5c6694d48849df1672cb880045931b"
+    }
+  ],
+  "prompt_file": "gh_A1_v4_full.prompt.txt",
+  "prompt_sha256": "7c700e924cdccc9067f6185b5c4f98b483f3e16c8ffdab218171c9f24febacd4",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 19.0 outside 10-15 (warn): 569w / 30s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "721"
+      }
+    ],
+    "format": {
+      "duration": "30.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 360,
+    "charged_at_source": 360,
+    "balance": {
+      "before": 6781.5,
+      "after": 6421.5
+    },
+    "basis": "higgsfield account transactions 2026-10-08 20:16Z Seedance 2.5 -360"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 721 f, 30.04 s, NO audio stream",
+    "cuts_detected": [
+      2.71,
+      4.42,
+      6.38,
+      8.38,
+      10.33,
+      12.79,
+      15.63,
+      17.63,
+      19.13,
+      20.5,
+      21.96,
+      24.08
+    ],
+    "cuts_note": "12 of 12 with the two-word 'Hard cut.' (first render of it): cuts did not merge",
+    "saturation_SATAVG_8bit": {
+      "shot1_door": 14.7,
+      "shot2_cap": 3.9,
+      "shot3_car": 10.1,
+      "note": "door in warm colour (not b/w) as in A-2; cap shot mostly mono with a faint tint (take 1 had 0.8)"
+    },
+    "dim_shot13_YAVG": {
+      "24.1-24.6": 40.9,
+      "24-25": 44.0,
+      "25-26": 38.4,
+      "27-28": 32.1,
+      "29-30": 26.8,
+      "note": "starts already dimmer than take 1 (41 vs 70) and falls evenly to 27: steadier dim, less range"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "1_identity_same_man": {
+      "belief": "HOLDS as one man; sheet match is Philipp's call",
+      "conf": 0.6
+    },
+    "2_motif_and_decade": {
+      "belief": "13 of 13 motifs. Ages better than take 1 in shots 2 and 5 (he reads about 50 in the flat cap and the snowy field) but old elsewhere; shot 11 renders a decorated dress uniform instead of evening dress with cravat",
+      "conf": 0.85
+    },
+    "3_grades_distinct": {
+      "belief": "PARTIAL: shot 1 door warm colour not b/w; the rest distinct",
+      "conf": 0.9
+    },
+    "4_no_text": {
+      "belief": "PARTIAL: the avenue car has a small plate with marks, not cleanly legible at 1080p; spines plain",
+      "conf": 0.75
+    },
+    "5_companion_faces": {
+      "belief": "not scored (Philipp 21:56); shot 3 from the front shows the woman and children clearly",
+      "conf": null
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS",
+      "conf": 0.8
+    },
+    "7_fermata_dim": {
+      "belief": "PARTIAL to PASS: alone, held, even dim 41 -> 27; the pool starts dimmer than written",
+      "conf": 0.8
+    },
+    "8_camera_static_except_7": {
+      "belief": "PASS by eye",
+      "conf": 0.8
+    },
+    "9_no_insignia": {
+      "belief": "FAIL, now in TWO shots: shot 6 shoulder boards + collar patches; shot 11 a dress uniform with medals, orders and braid where the prompt said nineteenth-century evening dress with a cravat. Shot 2's flat cap is clean this time",
+      "conf": 0.95
+    },
+    "10_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  }
+}

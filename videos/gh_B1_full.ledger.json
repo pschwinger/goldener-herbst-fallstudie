@@ -1,0 +1,122 @@
+{
+  "run": "GH 2026 A-1 full",
+  "stage": "full",
+  "started": "2026-10-09T00:06:15",
+  "model": "seedance_2_5 omni_reference 16:9 1080p 20s generate_audio=false direct",
+  "job_id": "13fb4b64-e1bf-45e2-b5e1-e3d373d60a33",
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2vcw2dyBazZFOOa0rkZOdY0kwgp/hf_20261008_220625_13fb4b64-e1bf-45e2-b5e1-e3d373d60a33.mp4",
+  "refs_bound": [
+    {
+      "image": "@Image1",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet2_cardinal_c1_pro.png",
+      "source_sha256": "5ec88d6bbd383e442c88ef256820005de0a2d86d8d00f5c2d1e4450126fe4d49",
+      "bound": "out/gh-B/ref1_sheet2_cardinal_c1_pro_1920x1080.png",
+      "bound_sha256": "cad77ab1b65b26c6e8df35e9a1a889de5a52ca70fac6fe188d690bdf27712a0c"
+    },
+    {
+      "image": "@Image2",
+      "source": "/Users/philippschwinger/Projects/empirica-imagegen/out/goldener-herbst/sheet1_age77_c1_flash.png",
+      "source_sha256": "8aafa9cec7c331497f167759c405bb6029c7692d1cf4d49f270d588b5f5430e2",
+      "bound": "out/gh-B/ref2_sheet1_age77_c1_flash_1920x1080.png",
+      "bound_sha256": "a959edd498bafbc5662106386fa20795adb47cdd9a053c75b72269ee1df5b2e5"
+    }
+  ],
+  "prompt_file": "gh_B1_full.prompt.txt",
+  "prompt_sha256": "6431eacff11ae5553e09d7baad38949c57f866ae250059c40bafbf10d7aa7c04",
+  "lint": {
+    "fails": [],
+    "warns": [
+      "3 words/sec 18.5 outside 10-15 (warn): 370w / 20s"
+    ]
+  },
+  "output": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "481"
+      }
+    ],
+    "format": {
+      "duration": "20.041667"
+    }
+  },
+  "credits": {
+    "quoted_before": 240,
+    "charged_at_source": 240,
+    "balance": {
+      "before": 6421.5,
+      "after": 6181.5
+    },
+    "basis": "higgsfield account transactions 2026-10-08 22:06Z Seedance 2.5 -240"
+  },
+  "gates": "scored by videogen after viewing; see the shot list gates 1-10 + P16 (take kept on upgrade?)",
+  "measured": {
+    "output": "1920x1080, 481 f, 20.04 s, NO audio stream",
+    "cuts_detected": {
+      "scene_gt_0.25": [
+        4.58,
+        7.88,
+        15.63
+      ],
+      "scene_gt_0.10_8-16s": [
+        11.17
+      ],
+      "note": "4 of 4 cuts present (5 shots); the shot 3 to 4 cut (warm candlelit to warm window bay) is invisible at the 0.25 threshold: same-palette blindness, as measured on the kotinos"
+    },
+    "shot_durations_rendered_s": {
+      "1": 4.58,
+      "2": 3.3,
+      "3": 3.29,
+      "4": 4.46,
+      "5": 4.41
+    },
+    "camera_drift_PSNR_first_vs_last": {
+      "shot1_MOVE": 8.1,
+      "shot3_static": 25.6,
+      "shot4_static": 27.0,
+      "note": "static shots hold; shot 1 drifts as written"
+    }
+  },
+  "gates_by_eye_1080p": {
+    "1_identity": {
+      "belief": "HOLDS: one old cardinal in shots 3 and 4, same face; sheet match is Philipp's call",
+      "conf": 0.65
+    },
+    "2_motifs": {
+      "belief": "PASS 5 of 5: conferring cardinals with the drift; black smoke over dome and square; hands on the table with two leaning in; alone in the side bay lifting his eyes; white smoke at dusk",
+      "conf": 0.9
+    },
+    "3_dress_without_invention": {
+      "belief": "PASS: cassock, mozzetta, white collar, zucchetto, cross on chain; no medals, braid, badges or lettering seen",
+      "conf": 0.9
+    },
+    "4_no_text": {
+      "belief": "PASS",
+      "conf": 0.85
+    },
+    "5_crowd_as_surface_no_faces": {
+      "belief": "PASS in shots 2 and 5; shot 1's other cardinals have faces, which the prompt allows",
+      "conf": 0.9
+    },
+    "6_excluded_compositions": {
+      "belief": "PASS on the brief's list; NOTE: shots 2 and 5 render the real St. Peter's (dome, obelisk, colonnade) from above, not a generic dome",
+      "conf": 0.8
+    },
+    "7_clean_texture_no_grain": {
+      "belief": "PASS by eye after the grain clause was dropped",
+      "conf": 0.8
+    },
+    "8_camera": {
+      "belief": "PASS: drift on shot 1 only",
+      "conf": 0.9
+    },
+    "9_format": {
+      "belief": "PASS",
+      "conf": 0.95
+    }
+  }
+}
