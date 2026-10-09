@@ -130,7 +130,7 @@ secs.append(('quellen', 'Quellenliste', '<p>Jedes Bild, das in einen Lauf geht o
 # Offen
 secs.append(('offen', 'Offen', '<ul>' + ''.join('<li>%s</li>' % esc(o) for o in D['offen']) + '</ul>'))
 
-nav = ''.join('<a href="#%s">%s</a>' % (k, esc(t)) for k, t, _ in secs) + '<span class="brand">FFP · GOLDENER HERBST 2026</span>'
+nav = ''.join('<a href="#%s">%s</a>' % (k, esc(t)) for k, t, _ in secs) + '<a href="archiv.html" style="background:#1f1f1f;color:#fff">Archiv (intern, Passwort)</a><span class="brand">FFP · GOLDENER HERBST 2026</span>'
 body = ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k, esc(t), h) for k, t, h in secs)
 banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>Vorabfassung.</b> %s</div>' % esc(D.get('freigabe_hinweis', ''))
 page = """<!doctype html>
