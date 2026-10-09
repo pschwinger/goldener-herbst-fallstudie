@@ -96,9 +96,9 @@ secs = []
 
 # 1 Ergebnis
 secs.append(('ergebnis', 'Ergebnis', """
-<p>Zwei Tests, dieselbe Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren? Links das Original, das nicht verwendet werden darf; daneben die drei erzeugten Fassungen, fotoreal, im 3D-Stil und als Bleistiftzeichnung (Version 4), aus demselben Brief und demselben Figurenblatt.</p>
+<p>Zwei Tests, dieselbe Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren? Links das Original, das nicht verwendet werden darf; daneben die drei erzeugten Fassungen, als Bleistiftzeichnung (Version 1), im 3D-Stil (Version 2) und fotoreal (Version 3), aus demselben Brief und demselben Figurenblatt.</p>
 <h3>Test A: die Einleitung, 30 Sekunden Montage über sechs Jahrzehnte</h3>
-<div class="row4">""" + original_card('Original: die Einleitung', 'Archivblock der Sendung, rund zweieinhalb Minuten aus zwölf Quellen. 79 von 96 Ausschnitten wurden von der Rechteabteilung zurückgewiesen.') + take_card('V-002', 'Fotoreal') + take_card('V-003', '3D-Stil') + take_card('V-009', 'Bleistift (Version 4)') + """</div>
+<div class="row4">""" + original_card('Original: die Einleitung', 'Archivblock der Sendung, rund zweieinhalb Minuten aus zwölf Quellen. 79 von 96 Ausschnitten wurden von der Rechteabteilung zurückgewiesen.') + take_card('V-009', 'Version 1: Bleistift') + take_card('V-003', 'Version 2: 3D-Stil') + take_card('V-002', 'Version 3: Fotoreal') + """</div>
 <p class="note">Weitere Takes (Test B, der Kirchenfürst, fotoreal und 3D-Stil; der Kontrolllauf ohne Figurenblatt; die drei ersetzten Takes) liegen mit Prompt, Kontaktbogen und Ledger unter <a href="videos/">videos/</a> und sind in der Quellenliste als V-001 bis V-009 geführt. Der Kontrolllauf ergab, blind beurteilt: ohne Figurenblatt entsteht ein plausibler alter Kardinal, der nicht er ist. Das Blatt kauft die Ähnlichkeit, die Worte kaufen den Typ.</p>"""))
 
 # 2 Warum

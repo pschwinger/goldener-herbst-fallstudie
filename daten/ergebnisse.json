@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 18:23 CEST",
+  "stand": "2026-10-09 18:26 CEST",
   "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS EINEM EINZIGEN BILD VON ARMIN MÜLLER-STAHL ENTSTANDEN, AUFGENOMMEN IN UNSEREM INTERVIEW 2026, IM ALTER VON 95 JAHREN. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS. DREI WEITERE BILDER, ER ALS JUNGER MANN, IM MITTLEREN ALTER UND ALS ÄLTERER MANN, MÜSSEN NOCH ERSTELLT WERDEN.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
@@ -20,7 +20,7 @@
       "datei": "gh_A1_v4_full.mp4",
       "test": "A",
       "stil": "fotoreal",
-      "take": "Take 2 (v4)",
+      "take": "Version 3 (Take 2, v4)",
       "status": "geliefert",
       "kurz": "13 von 13 Shots. Auto von vorn wie gewünscht; Alter weiterhin 65 bis 85; Abzeichen in zwei Einstellungen.",
       "urteil": "Philipp, 9.10. 12:03: er ab den Sechzigern, nicht in den jungen Einstellungen"
@@ -30,7 +30,7 @@
       "datei": "gh_A2_full.mp4",
       "test": "A",
       "stil": "3D-Stil",
-      "take": "Take 1",
+      "take": "Version 2",
       "status": "geliefert",
       "kurz": "13 von 13 Shots. Der Stil hält durchgehend; Kennzeichen und Markenstern am Auto erfunden.",
       "urteil": "Philipp, 9.10. 12:04: eine Figur durchgehend, erkennbar er"
@@ -83,17 +83,17 @@
       "take": "Take 1 (gemischt)",
       "status": "ersetzt",
       "kurz": "13 von 13 Shots. Der Bleistiftstil hielt nur in etwa 5 von 13 Einstellungen; wo ein Shot seine Jahrzehntfarbe nannte, kippte er ins Fotoreale. Zwei Filme in einem.",
-      "urteil": "Philipp, 9.10. 17:57: kein Neulauf der Mischform; ersetzt durch Version 4 (V-009)"
+      "urteil": "Philipp, 9.10. 17:57: kein Neulauf der Mischform; ersetzt durch Version 1 (V-009)"
     },
     {
       "id": "V-009",
       "datei": "gh_A3b_full.mp4",
       "test": "A",
       "stil": "Bleistift-Stil",
-      "take": "Version 4 (ganz Graphit)",
+      "take": "Version 1 (ganz Graphit)",
       "status": "geliefert",
       "kurz": "13 von 13 Shots. Jede Farbangabe aus den Shots entfernt, der Stil in jedem Shot wiederholt: Graphitlinien und Schraffur durchgehend, 11 von 13 Einstellungen vollständig einfarbig; Rot bleibt am Kardinal und am Kerzenlicht. Abzeichen auf der Uniform wie in jedem A-Lauf.",
-      "urteil": "Philipp, 9.10. 18:19: angenommen, auf die Seite als Version 4"
+      "urteil": "Philipp, 9.10. 18:19: angenommen; 18:25: auf der Seite Version 1"
     }
   ],
   "bilder": [
@@ -224,7 +224,7 @@
     {
       "id": "V-008",
       "was": "Test A, Bleistiftstil, Take 1 (Stilblock mit 'einfarbig' neben den Jahrzehntfarben der Shots)",
-      "warum": "der Stil hielt nur in etwa 5 von 13 Einstellungen; wo ein Shot seine Farbe nannte, kippte er ins Fotoreale. Lehre: der Stil muss in jedem Shot stehen und darf dort nicht widersprochen werden; so entstand Version 4 (V-009)"
+      "warum": "der Stil hielt nur in etwa 5 von 13 Einstellungen; wo ein Shot seine Farbe nannte, kippte er ins Fotoreale. Lehre: der Stil muss in jedem Shot stehen und darf dort nicht widersprochen werden; so entstand Version 1 (V-009)"
     }
   ],
   "vorhersagen": {
