@@ -1,6 +1,6 @@
 {
   "stand": "2026-10-09 15:10 CEST",
-  "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS EINEM EINZIGEN BILD VON ARMIN MÜLLER-STAHL ENTSTANDEN, AUFGENOMMEN IN UNSEREM INTERVIEW 2026, IM ALTER VON 95 JAHREN. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS. DREI WEITERE BILDER, ER ALS JUNGER MANN, IM MITTLEREN ALTER UND ALS ÄLTERER MANN, MÜSSEN NOCH ERSTELLT WERDEN. ALL IMAGES AND VIDEOS ON THIS PAGE WERE CREATED FROM A SINGLE PICTURE OF HIM AT 95, TAKEN IN OUR 2026 INTERVIEW. THIS IS A TEST, NOT THE FINAL RESULT. THREE MORE IMAGES (HIM YOUNG, MIDDLE-AGED AND OLDER) STILL HAVE TO BE CREATED.",
+  "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS EINEM EINZIGEN BILD VON ARMIN MÜLLER-STAHL ENTSTANDEN, AUFGENOMMEN IN UNSEREM INTERVIEW 2026, IM ALTER VON 95 JAHREN. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS. DREI WEITERE BILDER, ER ALS JUNGER MANN, IM MITTLEREN ALTER UND ALS ÄLTERER MANN, MÜSSEN NOCH ERSTELLT WERDEN.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
   "freigabe_hinweis": "Vorabfassung, von Philipp Schwinger (FFP) am 9.10.2026 freigegeben. Die schriftliche Einwilligung von Armin Müller-Stahl für die erzeugten Bilder wird nachgereicht (Q-001, Q-012, P-001); bis dahin stehen Bilder und Videos hier nur, soweit er sie selbst freigegeben hat. Keine Rechtsberatung.",
@@ -211,16 +211,56 @@
     "nicht_gelaufen": 3
   },
   "vorhersagen_detail": [
-    {"claim": "Alle 13 Montage-Einstellungen vorhanden, erster Take", "quote": "0,30", "urteil": "gehalten, zu vorsichtig"},
-    {"claim": "Kosten 270 je 30-s-Lauf", "quote": "0,90", "urteil": "verfehlt: 360 verrechnet, Preis geändert"},
-    {"claim": "Vier Altersblätter auf Anhieb", "quote": "0,35", "urteil": "verfehlt: 1, 2, 3, 3 Takes"},
-    {"claim": "Alter je Jahrzehnt lesbar (nachträglich)", "quote": "-", "urteil": "zweimal verfehlt"},
-    {"claim": "Keine Abzeichen (nachträglich)", "quote": "-", "urteil": "verfehlt; Korrektur hielt bei B"},
-    {"claim": "Das Bühnenlicht dimmt wie geschrieben", "quote": "0,70", "urteil": "teilweise: dimmt, aber zu früh"},
-    {"claim": "Zweiter Durchgang behebt das Gesichtsleck", "quote": "0,55", "urteil": "gehalten"},
-    {"claim": "Kontrolle: ein blinder Prüfer erkennt ihn nicht", "quote": "0,75", "urteil": "gehalten (Philipp, 9.10. 11:16)"},
-    {"claim": "Identität über sechs Alter, fotoreal (A-1)", "quote": "0,45", "urteil": "teilweise: er ab den Sechzigern, nicht in den jungen Einstellungen (Philipp, 9.10. 12:03)"},
-    {"claim": "Eine erkennbare Figur in 3D (A-2)", "quote": "0,50", "urteil": "gehalten (Philipp, 9.10. 12:04)"}
+    {
+      "claim": "Alle 13 Montage-Einstellungen vorhanden, erster Take",
+      "quote": "0,30",
+      "urteil": "gehalten, zu vorsichtig"
+    },
+    {
+      "claim": "Kosten 270 je 30-s-Lauf",
+      "quote": "0,90",
+      "urteil": "verfehlt: 360 verrechnet, Preis geändert"
+    },
+    {
+      "claim": "Vier Altersblätter auf Anhieb",
+      "quote": "0,35",
+      "urteil": "verfehlt: 1, 2, 3, 3 Takes"
+    },
+    {
+      "claim": "Alter je Jahrzehnt lesbar (nachträglich)",
+      "quote": "-",
+      "urteil": "zweimal verfehlt"
+    },
+    {
+      "claim": "Keine Abzeichen (nachträglich)",
+      "quote": "-",
+      "urteil": "verfehlt; Korrektur hielt bei B"
+    },
+    {
+      "claim": "Das Bühnenlicht dimmt wie geschrieben",
+      "quote": "0,70",
+      "urteil": "teilweise: dimmt, aber zu früh"
+    },
+    {
+      "claim": "Zweiter Durchgang behebt das Gesichtsleck",
+      "quote": "0,55",
+      "urteil": "gehalten"
+    },
+    {
+      "claim": "Kontrolle: ein blinder Prüfer erkennt ihn nicht",
+      "quote": "0,75",
+      "urteil": "gehalten (Philipp, 9.10. 11:16)"
+    },
+    {
+      "claim": "Identität über sechs Alter, fotoreal (A-1)",
+      "quote": "0,45",
+      "urteil": "teilweise: er ab den Sechzigern, nicht in den jungen Einstellungen (Philipp, 9.10. 12:03)"
+    },
+    {
+      "claim": "Eine erkennbare Figur in 3D (A-2)",
+      "quote": "0,50",
+      "urteil": "gehalten (Philipp, 9.10. 12:04)"
+    }
   ],
   "prompt_regeln": [
     "Nur er hat das gebundene Gesicht; jede andere Figur desselben Typs bekommt in Worten ein anderes Gesicht, sonst wandert das Blatt auf alle.",
@@ -231,8 +271,16 @@
     "Alter in Worten bindet im Video nicht an ein echtes Gesicht; der Rauch verlässt die Kuppellaterne nicht durch Worte (3 von 3)."
   ],
   "beleg_pdf": [
-    {"datei": "pdf/Goldener-Herbst-Fallstudie-DE.pdf", "titel": "Beleg zum Download, Deutsch", "kurz": "eine Seite: sieben Takes, Vorhersagen, Regeln, Vorbehalte"},
-    {"datei": "pdf/Goldener-Herbst-Fallstudie-EN.pdf", "titel": "Beleg zum Download, English", "kurz": "one page: seven takes, predictions, rules, flags"}
+    {
+      "datei": "pdf/Goldener-Herbst-Fallstudie-DE.pdf",
+      "titel": "Beleg zum Download, Deutsch",
+      "kurz": "eine Seite: sieben Takes, Vorhersagen, Regeln, Vorbehalte"
+    },
+    {
+      "datei": "pdf/Goldener-Herbst-Fallstudie-EN.pdf",
+      "titel": "Beleg zum Download, English",
+      "kurz": "one page: seven takes, predictions, rules, flags"
+    }
   ],
   "kosten": {
     "video_credits": 2274,
