@@ -103,7 +103,7 @@ footer{margin-top:70px;border-top:1px solid var(--hair);padding-top:16px;font-si
 
 # Alle Oberflaechentexte je Sprache. Deutsch ist der Wortlaut der Seite vom 9.10. 18:26 (unveraendert).
 S = {'de': dict(
-    nav_details='Details', h_problem='Das Problem',
+    nav_details='Details', nav_archiv='Goldener Herbst · Archivsuche 2020–2026', h_problem='Das Problem',
     problem='<p>Für die Einleitungen der Sendung hat FFP im Archivsystem des Senders nur Material gesucht, das dort als frei markiert war, es bestellt und in die Einleitungen geschnitten. Die Rechteabteilung des ORF hat anschließend fast alles zurückgewiesen: Von 96 verwendeten Ausschnitten kamen 79 mit „Nein“ oder „Nein, aber“ zurück, 17 waren frei.</p><p>Die Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren, und ohne dass wir Rechte verletzen, die wir nicht haben?</p>',
     h_untersucht='Was wir untersucht haben',
     untersucht='<p>Drei Fragen, jede mit einem eigenen Lauf: Erstens, trägt ein Brief in Worten die Welt über eine Wand, hinter der niemand das Original sieht? Zweitens, was kauft ein Figurenblatt gegenüber Worten allein (der Kontrolllauf ohne Blatt)? Drittens, hält eine Figur über sechs Jahrzehnte, wenn die Altersblätter aus Worten kommen, und was ändert sich, wenn zwei echte Fotos aus seinem Archiv die Leiter stützen? Dazu drei Stile für dieselbe Montage: fotoreal, 3D und Bleistift.</p>',
@@ -182,7 +182,7 @@ S = {'de': dict(
     archiv_title='Archiv 2020 bis 2026',
     footer='F.F.P. Film &amp; Fernsehproduktion GmbH, Unterer Schreiberweg 29/5, A-1190 Wien, <a href="https://www.ffp.at">www.ffp.at</a> · powered by EmpiricaAI, <a href="https://www.getempirica.com">www.getempirica.com</a> · Keine Rechtsberatung. Seite gebaut aus briefe/, quellen/ und daten/ergebnisse.json (ffp-archive, storyboard).',
 ), 'en': dict(
-    nav_details='Details', h_problem='The problem',
+    nav_details='Details', nav_archiv='Goldener Herbst · Archive search 2020–2026', h_problem='The problem',
     problem='<p>For the openings of the programme, FFP searched the broadcaster\'s archive system only for material marked as free there, ordered it and cut it into the openings. The ORF rights department then rejected almost all of it: of 96 excerpts used, 79 came back with "no" or "no, but", 17 were free.</p><p>The question: can third-party material be replaced by generated material that evokes the same world without copying the original, and without infringing rights we do not hold?</p>',
     h_untersucht='What we researched',
     untersucht='<p>Three questions, each with a run of its own: first, does a brief in words carry the world across a wall behind which nobody sees the original? Second, what does a character sheet buy over words alone (the control run without a sheet)? Third, does one character hold across six decades when the age sheets come from words, and what changes when two real photos from his archive support the ladder? Plus three styles for the same montage: photoreal, 3D and pencil.</p>',
@@ -373,8 +373,8 @@ def build(lang):
         + '<section id="setup"><h2>%s</h2><p>%s</p>%s%s</section>' % (esc(s['h_setup']), s['setup_p'], diagram, steps)
         + ''.join('<section id="%s"><h2>%s</h2>%s</section>' % (k_, esc(t_), h_) for k_, t_, h_ in secs if k_ == 'ergebnis')
         + '<section id="details"><h2>%s</h2><p>%s</p>%s</section>' % (esc(s['h_details']), s['details_p'], material))
-    nav = '<a href="#details">%s</a><a class="lang%s" href="index.html" lang="de">%s</a><a class="lang%s" href="en.html" lang="en">%s</a><span class="brand">FFP · GOLDENER HERBST 2026</span>' % (
-        s['nav_details'], ' on' if lang == 'de' else '', s['lang_de'], ' on' if lang == 'en' else '', s['lang_en'])
+    nav = '<a href="#details">%s</a><a href="archiv.html">%s</a><a class="lang%s" href="index.html" lang="de">%s</a><a class="lang%s" href="en.html" lang="en">%s</a><span class="brand">FFP · GOLDENER HERBST 2026</span>' % (
+        s['nav_details'], esc(s['nav_archiv']), ' on' if lang == 'de' else '', s['lang_de'], ' on' if lang == 'en' else '', s['lang_en'])
     body = main
     banner = '' if D.get('freigabe_oeffentlich') else '<div class="banner"><b>%s</b> %s</div>' % (s['vorab'], esc(D.get('freigabe_hinweis', '')))
     if D.get('hinweis_test'):
