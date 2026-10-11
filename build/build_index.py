@@ -103,7 +103,7 @@ footer{margin-top:70px;border-top:1px solid var(--hair);padding-top:16px;font-si
 
 # Alle Oberflaechentexte je Sprache. Deutsch ist der Wortlaut der Seite vom 9.10. 18:26 (unveraendert).
 S = {'de': dict(
-    nav_details='Details', nav_archiv='Goldener Herbst · Archivsuche 2020–2026', h_problem='Das Problem',
+    nav_details='Details', nav_archiv='Archiv 2020 bis 2026 (intern)', h_problem='Das Problem',
     problem='<p>Für die Einleitungen der Sendung hat FFP im Archivsystem des Senders nur Material gesucht, das dort als frei markiert war, es bestellt und in die Einleitungen geschnitten. Die Rechteabteilung des ORF hat anschließend fast alles zurückgewiesen: Von 96 verwendeten Ausschnitten kamen 79 mit „Nein“ oder „Nein, aber“ zurück, 17 waren frei.</p><p>Die Frage: Lässt sich Fremdmaterial durch Erzeugtes ersetzen, das dieselbe Welt heraufbeschwört, ohne das Original zu kopieren, und ohne dass wir Rechte verletzen, die wir nicht haben?</p>',
     h_untersucht='Was wir untersucht haben',
     untersucht='<p>Drei Fragen, jede mit einem eigenen Lauf: Erstens, trägt ein Brief in Worten die Welt über eine Wand, hinter der niemand das Original sieht? Zweitens, was kauft ein Figurenblatt gegenüber Worten allein (der Kontrolllauf ohne Blatt)? Drittens, hält eine Figur über sechs Jahrzehnte, wenn die Altersblätter aus Worten kommen, und was ändert sich, wenn zwei echte Fotos aus seinem Archiv die Leiter stützen? Dazu drei Stile für dieselbe Montage: fotoreal, 3D und Bleistift.</p>',
@@ -182,7 +182,7 @@ S = {'de': dict(
     archiv_title='Archiv 2020 bis 2026',
     footer='F.F.P. Film &amp; Fernsehproduktion GmbH, Unterer Schreiberweg 29/5, A-1190 Wien, <a href="https://www.ffp.at">www.ffp.at</a> · powered by EmpiricaAI, <a href="https://www.getempirica.com">www.getempirica.com</a> · Keine Rechtsberatung. Seite gebaut aus briefe/, quellen/ und daten/ergebnisse.json (ffp-archive, storyboard).',
 ), 'en': dict(
-    nav_details='Details', nav_archiv='Goldener Herbst · Archive search 2020–2026', h_problem='The problem',
+    nav_details='Details', nav_archiv='Archive 2020 to 2026 (internal)', h_problem='The problem',
     problem='<p>For the openings of the programme, FFP searched the broadcaster\'s archive system only for material marked as free there, ordered it and cut it into the openings. The ORF rights department then rejected almost all of it: of 96 excerpts used, 79 came back with "no" or "no, but", 17 were free.</p><p>The question: can third-party material be replaced by generated material that evokes the same world without copying the original, and without infringing rights we do not hold?</p>',
     h_untersucht='What we researched',
     untersucht='<p>Three questions, each with a run of its own: first, does a brief in words carry the world across a wall behind which nobody sees the original? Second, what does a character sheet buy over words alone (the control run without a sheet)? Third, does one character hold across six decades when the age sheets come from words, and what changes when two real photos from his archive support the ladder? Plus three styles for the same montage: photoreal, 3D and pencil.</p>',
@@ -348,7 +348,7 @@ def build(lang):
         (s['h_orte'], '<p>%s</p>' % s['orte_p']),
         (s['h_kalib'], '<p>%s</p><div class="nums">%s</div>%s' % (s['kalib_p'], nums, vdet)),
         SEC['briefe'], SEC['regeln'], SEC['fehl']] + ([SEC['beleg']] if 'beleg' in SEC else []) + [SEC['interview'], SEC['quellen'], SEC['offen']]
-    material = ''.join('<details open><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t_), h_) for t_, h_ in detail_blocks) + '<details id="archiv" open><summary>%s</summary><p>%s</p><iframe src="archiv.html" title="%s" style="width:100%%;height:85vh;border:1px solid var(--hair);border-radius:10px;background:#fff" loading="lazy"></iframe></details>' % (s['archiv_sum'], s['archiv_p'], s['archiv_title'])
+    material = ''.join('<details open><summary>%s</summary><div style="padding:4px 0 18px">%s</div></details>' % (esc(t_), h_) for t_, h_ in detail_blocks)
     g = s['dg']
     diagram = ('<svg class="dg" viewBox="0 0 1200 290" role="img" aria-label="%s"><defs><marker id="ah" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#474747"/></marker></defs>'
         '<rect class="box" x="10" y="40" width="150" height="90"/><text x="85" y="78" text-anchor="middle">%s</text><text class="sm" x="85" y="100" text-anchor="middle">%s</text>'
