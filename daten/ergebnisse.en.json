@@ -146,6 +146,18 @@
     "G-029": {
       "titel": "Age sheet 65 in the pencil style",
       "status": "accepted, 9 Oct 22:08 (row to follow)"
+    },
+    "Q-002": {
+      "titel": "Source picture: a still from our 2026 interview",
+      "status": "FFP's own material, the only face source for the word-derived sheets"
+    },
+    "Q-014": {
+      "titel": "Photo from his private archive, about 45 to 50",
+      "status": "by the producer's decision and at his risk (9 Oct, 21:00 and 22:59); photographer not recorded"
+    },
+    "Q-015": {
+      "titel": "Film frame from his private archive, about 30 to 35",
+      "status": "by the producer's decision and at his risk (9 Oct, 21:30 and 22:59); source not named"
     }
   },
   "fehlversuche": {
@@ -245,6 +257,51 @@
       "claim": "One recognisable character in 3D (A-2)",
       "quote": "0.50",
       "urteil": "held (Philipp, 9 Oct 12:04)"
+    },
+    {
+      "claim": "Re-run photoreal: one character across the age ladder",
+      "quote": "0.55",
+      "urteil": "held (storyboard by eye; Philipp's verdict open)"
+    },
+    {
+      "claim": "Re-run photoreal: the portrait's face in the seventies shots",
+      "quote": "0.70",
+      "urteil": "held"
+    },
+    {
+      "claim": "Re-run photoreal: the young man reads 28 to 36",
+      "quote": "0.45",
+      "urteil": "partial: reads 35 to 40"
+    },
+    {
+      "claim": "Re-run photoreal: insignia on the uniform again",
+      "quote": "0.70",
+      "urteil": "held (five of five A runs)"
+    },
+    {
+      "claim": "Re-run photoreal: 13 of 13 shots",
+      "quote": "0.85",
+      "urteil": "held"
+    },
+    {
+      "claim": "Re-run pencil: the line holds in 13 of 13",
+      "quote": "0.75",
+      "urteil": "partial: about 9 of 13"
+    },
+    {
+      "claim": "Re-run pencil: one character across the pencil ladder",
+      "quote": "0.50",
+      "urteil": "held (storyboard by eye)"
+    },
+    {
+      "claim": "Re-run pencil: moustache from the sheets in 2, 3, 4 and 8",
+      "quote": "0.70",
+      "urteil": "held"
+    },
+    {
+      "claim": "Re-run pencil: red returns on the cardinal",
+      "quote": "0.60",
+      "urteil": "failed: no red this time"
     }
   ],
   "prompt_regeln": [

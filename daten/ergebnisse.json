@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-09 23:15 CEST",
+  "stand": "2026-10-09 23:30 CEST",
   "hinweis_test": "ALLE BILDER UND VIDEOS AUF DIESER SEITE SIND AUS DREI FOTOS VON ARMIN MÜLLER-STAHL ENTSTANDEN: EINEM BILD AUS UNSEREM INTERVIEW 2026, IM ALTER VON 90 JAHREN, UND ZWEI FOTOS AUS SEINEM PRIVATEN ARCHIV. DARAUS WURDEN DIE FIGURENBLÄTTER GEMACHT. DAS IST EIN TEST, NICHT DAS ENDERGEBNIS.",
   "original_embed": "<div style=\"position:relative;aspect-ratio:16/9;background:#000\"><iframe src=\"https://player.vimeo.com/video/1228079693?h=2cd0ad9d5b&title=0&byline=0&portrait=0&dnt=1\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"fullscreen; picture-in-picture\" allowfullscreen title=\"Original: die Einleitung (V02, 3:29)\"></iframe></div>",
   "freigabe_oeffentlich": false,
@@ -118,121 +118,161 @@
   ],
   "bilder": [
     {
+      "id": "Q-002",
+      "datei": "interview_still.jpg",
+      "titel": "Ausgangsbild: Standbild aus unserem Interview 2026",
+      "status": "eigenes Material von FFP, die einzige Gesichtsquelle für die Blätter in Worten",
+      "gruppe": "ausgang"
+    },
+    {
       "id": "G-003",
       "datei": "sheet1a_realage_c3_pro.png",
       "titel": "Anker: Figurenblatt im echten Alter (90)",
-      "status": "R-001 bestanden, 8.10. 20:02"
+      "status": "R-001 bestanden, 8.10. 20:02",
+      "gruppe": "worte"
     },
     {
       "id": "G-005",
       "datei": "sheet1_age77_c1_flash.png",
       "titel": "Blatt 1: derselbe Mann mit 77",
-      "status": "R-001 bestanden, 8.10. ca. 20:25"
-    },
-    {
-      "id": "G-007",
-      "datei": "sheet2_cardinal_c1_pro.png",
-      "titel": "Blatt 2: der Kardinal",
-      "status": "bestanden, 8.10. 20:22"
-    },
-    {
-      "id": "G-020",
-      "datei": "sheet1_3d_c1_pro.png",
-      "titel": "Blatt 1 im 3D-Stil",
-      "status": "bestanden, 8.10. abends"
-    },
-    {
-      "id": "G-021",
-      "datei": "sheet2_3d_c2_flash.png",
-      "titel": "Blatt 2 im 3D-Stil",
-      "status": "bestanden, 8.10. abends"
+      "status": "R-001 bestanden, 8.10. ca. 20:25",
+      "gruppe": "worte"
     },
     {
       "id": "G-009",
       "datei": "sheet1_age62_c1_flash.png",
       "titel": "Altersblatt 65",
-      "status": "bestanden"
+      "status": "bestanden",
+      "gruppe": "worte"
     },
     {
       "id": "G-010",
       "datei": "sheet1_age52_c2_flash_v2.png",
       "titel": "Altersblatt 52",
       "status": "gestrichen 9.10. 21:36: ersetzt durch das neue Blatt 47 aus dem Privatarchiv-Foto",
-      "gestrichen": true
+      "gestrichen": true,
+      "gruppe": "worte"
     },
     {
       "id": "G-011",
       "datei": "sheet1_age42_c3_flash_v3.png",
       "titel": "Altersblatt 42 (liest sich wie 45)",
       "status": "gestrichen 9.10. 21:36: ersetzt durch das neue Blatt 47 aus dem Privatarchiv-Foto",
-      "gestrichen": true
+      "gestrichen": true,
+      "gruppe": "worte"
     },
     {
       "id": "G-012",
       "datei": "sheet1_age32_c3_flash_v7.png",
       "titel": "Altersblatt 32 (liest sich wie 40)",
       "status": "gestrichen 9.10. 21:36: ersetzt durch das neue Blatt 32 aus dem Privatarchiv-Foto",
-      "gestrichen": true
+      "gestrichen": true,
+      "gruppe": "worte"
     },
     {
-      "id": "G-018",
-      "datei": "testframe_shot14_photoreal_c3_flash_v2.png",
-      "titel": "Testbild, die leere Bühne, fotoreal",
-      "status": "angenommen, 8.10. 21:12"
-    },
-    {
-      "id": "G-022",
-      "datei": "testframe_shot14_3d_c1_pro.png",
-      "titel": "Testbild, die leere Bühne, 3D-Stil",
-      "status": "angenommen, 8.10. abends"
-    },
-    {
-      "id": "G-023",
-      "datei": "sheet1_sketch_c1_pro.png",
-      "titel": "Blatt 1 im Bleistift-Stil",
-      "status": "R-001 bestanden, 9.10. 16:55"
-    },
-    {
-      "id": "G-024",
-      "datei": "testframe_shot14_sketch_c1_pro.png",
-      "titel": "Testbild, die leere Bühne, Bleistift-Stil",
-      "status": "angenommen, 9.10. 17:05"
+      "id": "Q-014",
+      "datei": "AMS_privatarchiv_ca45-50_portrait.jpg",
+      "titel": "Foto aus seinem Privatarchiv, etwa 45 bis 50",
+      "status": "auf Entscheidung und Risiko des Produzenten (9.10., 21:00 und 22:59); Fotograf nicht erfasst",
+      "gruppe": "fotos"
     },
     {
       "id": "G-025",
       "datei": "sheet1_age47_c1_flash.png",
       "titel": "Altersblatt 47, aus dem Privatarchiv-Porträt (Q-014)",
-      "status": "R-001 bestanden, 9.10. 21:38 (Zeile in der Quellenliste folgt)"
+      "status": "R-001 bestanden, 9.10. 21:38 (Zeile in der Quellenliste folgt)",
+      "gruppe": "fotos"
+    },
+    {
+      "id": "Q-015",
+      "datei": "AMS_privatarchiv_ca30-35_frame.png",
+      "titel": "Filmbild aus seinem Privatarchiv, etwa 30 bis 35",
+      "status": "auf Entscheidung und Risiko des Produzenten (9.10., 21:30 und 22:59); Quelle nicht benannt",
+      "gruppe": "fotos"
     },
     {
       "id": "G-026",
       "datei": "sheet1_age32_v2_c1_flash.png",
       "titel": "Altersblatt 32, aus dem Privatarchiv-Filmbild (nur Test)",
-      "status": "angenommen 9.10. 22:08; auf der Seite auf Entscheidung des Produzenten (22:59)"
+      "status": "angenommen 9.10. 22:08; auf der Seite auf Entscheidung des Produzenten (22:59)",
+      "gruppe": "fotos"
     },
     {
-      "id": "G-027",
-      "datei": "sheet1_age32_sketch_c1_pro.png",
-      "titel": "Altersblatt 32 im Bleistift-Stil",
-      "status": "angenommen 9.10. 22:08; auf der Seite auf Entscheidung des Produzenten (22:59)"
+      "id": "G-007",
+      "datei": "sheet2_cardinal_c1_pro.png",
+      "titel": "Blatt 2: der Kardinal",
+      "status": "bestanden, 8.10. 20:22",
+      "gruppe": "kardinal"
+    },
+    {
+      "id": "G-020",
+      "datei": "sheet1_3d_c1_pro.png",
+      "titel": "Blatt 1 im 3D-Stil",
+      "status": "bestanden, 8.10. abends",
+      "gruppe": "stile"
+    },
+    {
+      "id": "G-021",
+      "datei": "sheet2_3d_c2_flash.png",
+      "titel": "Blatt 2 im 3D-Stil",
+      "status": "bestanden, 8.10. abends",
+      "gruppe": "stile"
+    },
+    {
+      "id": "G-023",
+      "datei": "sheet1_sketch_c1_pro.png",
+      "titel": "Blatt 1 im Bleistift-Stil",
+      "status": "R-001 bestanden, 9.10. 16:55",
+      "gruppe": "stile"
     },
     {
       "id": "G-028",
       "datei": "sheet1_age47_sketch_c1_pro.png",
       "titel": "Altersblatt 47 im Bleistift-Stil",
-      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
+      "status": "angenommen, 9.10. 22:08 (Zeile folgt)",
+      "gruppe": "stile"
     },
     {
       "id": "G-029",
       "datei": "sheet1_age65_sketch_c1_pro.png",
       "titel": "Altersblatt 65 im Bleistift-Stil",
-      "status": "angenommen, 9.10. 22:08 (Zeile folgt)"
+      "status": "angenommen, 9.10. 22:08 (Zeile folgt)",
+      "gruppe": "stile"
+    },
+    {
+      "id": "G-027",
+      "datei": "sheet1_age32_sketch_c1_pro.png",
+      "titel": "Altersblatt 32 im Bleistift-Stil",
+      "status": "angenommen 9.10. 22:08; auf der Seite auf Entscheidung des Produzenten (22:59)",
+      "gruppe": "stile"
+    },
+    {
+      "id": "G-018",
+      "datei": "testframe_shot14_photoreal_c3_flash_v2.png",
+      "titel": "Testbild, die leere Bühne, fotoreal",
+      "status": "angenommen, 8.10. 21:12",
+      "gruppe": "test"
+    },
+    {
+      "id": "G-022",
+      "datei": "testframe_shot14_3d_c1_pro.png",
+      "titel": "Testbild, die leere Bühne, 3D-Stil",
+      "status": "angenommen, 8.10. abends",
+      "gruppe": "test"
+    },
+    {
+      "id": "G-024",
+      "datei": "testframe_shot14_sketch_c1_pro.png",
+      "titel": "Testbild, die leere Bühne, Bleistift-Stil",
+      "status": "angenommen, 9.10. 17:05",
+      "gruppe": "test"
     },
     {
       "id": "H-003",
       "datei": "gh_B0_vs_B1v3_vs_interview_shot4.jpg",
       "titel": "Blind-Test: Kontrolle, Take mit Blatt, Interviewbild",
-      "status": "Beleg, nur für Menschen"
+      "status": "Beleg, nur für Menschen",
+      "gruppe": "blind"
     }
   ],
   "fehlversuche": [
@@ -293,10 +333,10 @@
     }
   ],
   "vorhersagen": {
-    "gesamt": 26,
-    "gehalten": 19,
-    "gescheitert": 4,
-    "teilweise": 2,
+    "gesamt": 35,
+    "gehalten": 25,
+    "gescheitert": 5,
+    "teilweise": 4,
     "offen": 0,
     "nicht_gelaufen": 3
   },
@@ -350,6 +390,51 @@
       "claim": "Eine erkennbare Figur in 3D (A-2)",
       "quote": "0,50",
       "urteil": "gehalten (Philipp, 9.10. 12:04)"
+    },
+    {
+      "claim": "Neulauf fotoreal: eine Figur über die Altersleiter",
+      "quote": "0,55",
+      "urteil": "gehalten (storyboard per Auge; Philipps Urteil offen)"
+    },
+    {
+      "claim": "Neulauf fotoreal: Gesicht aus dem Porträt in den Siebziger-Einstellungen",
+      "quote": "0,70",
+      "urteil": "gehalten"
+    },
+    {
+      "claim": "Neulauf fotoreal: der junge Mann liest sich 28 bis 36",
+      "quote": "0,45",
+      "urteil": "teilweise: liest sich 35 bis 40"
+    },
+    {
+      "claim": "Neulauf fotoreal: Abzeichen auf der Uniform erneut",
+      "quote": "0,70",
+      "urteil": "gehalten (fünf von fünf A-Läufen)"
+    },
+    {
+      "claim": "Neulauf fotoreal: 13 von 13 Einstellungen",
+      "quote": "0,85",
+      "urteil": "gehalten"
+    },
+    {
+      "claim": "Neulauf Bleistift: Strich hält in 13 von 13",
+      "quote": "0,75",
+      "urteil": "teilweise: etwa 9 von 13"
+    },
+    {
+      "claim": "Neulauf Bleistift: eine Figur über die Bleistift-Leiter",
+      "quote": "0,50",
+      "urteil": "gehalten (storyboard per Auge)"
+    },
+    {
+      "claim": "Neulauf Bleistift: Schnurrbart aus den Blättern in 2, 3, 4 und 8",
+      "quote": "0,70",
+      "urteil": "gehalten"
+    },
+    {
+      "claim": "Neulauf Bleistift: Rot kehrt am Kardinal zurück",
+      "quote": "0,60",
+      "urteil": "verfehlt: diesmal kein Rot"
     }
   ],
   "prompt_regeln": [
