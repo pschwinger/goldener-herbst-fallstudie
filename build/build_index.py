@@ -39,6 +39,10 @@ def md2html(t):
 BASE = json.loads(rd('daten/ergebnisse.json'))
 EN = json.loads(rd('daten/ergebnisse.en.json'))
 rows = list(csv.DictReader(io.StringIO(rd('quellen/Quellenliste.csv')), delimiter=';'))
+# Philipp, 9.10. 22:55: keine Credit-Zahlen auf der Seite. Die Quellenliste (ffp-archive) bleibt unverändert; nur die Anzeige maskiert Beträge.
+import re as _re
+_CR = _re.compile(r'(?i)(Videokosten\s+)?(Kosten\s+)?\d[\d.,]*\s*Credits?(\s+in\s+\w+\s+Abbuchungen)?')
+rows = [{k: (_CR.sub('Kosten im Ledger', v) if isinstance(v, str) else v) for k, v in r.items()} for r in rows]
 
 def data(lang):
     """Deutsch: die Quelle. English: dieselben Zahlen, Dateien und Status, Texte je ID aus der Overlay-Datei."""
