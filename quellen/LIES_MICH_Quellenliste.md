@@ -27,3 +27,7 @@ Jedes Bild, das in einen Erzeugungslauf geht oder einen Menschen bei der Arbeit 
 
 - trainiertes Modell aus eigenem Material: ein Modell (z. B. Higgsfield Soul), das nur aus Zeilen mit eigenem Material trainiert wurde; eigene Zeile, Einwilligung muss das Training abdecken.
 - Erzeugt: Figurenblaetter, Altersblaetter, Testbilder, Keyframes, Clips; immer mit Verweis auf die Zeilen ihrer Eingaben, Modell, Transport, Groesse, Lauf.
+
+## Oeffentliche Kopie
+
+Diese Kopie im Repo ist oeffentlich. Credit-Betraege sind hier durch "Kosten im Ledger (intern)" ersetzt (Entscheidung Philipp Schwinger 09.10.2026 22:55: keine Credit-Zahlen auf der Seite). Die vollstaendige Liste mit Betraegen liegt bei FFP.
